@@ -1,0 +1,261 @@
+
+
+"default_voice_title" = "Default voice";
+
+
+"default_voice_dialog_title" = "Select a voice";
+
+
+"detect_language_title" = "Language detection";
+
+
+"detect_language_desc" = "Switch to this language when it is detected and you normally use another language.";
+
+
+"speech_volume" = "Speech volume";
+
+
+"speech_rate" = "Speech rate";
+
+
+"pseudo_english_title" = "English words";
+
+
+"pseudo_english_desc" = "Try to read English words correctly";
+
+
+"settings" = "Settings";
+
+
+"wifi_only_title" = "Wi-Fi only";
+
+
+"wifi_only_desc" = "Download voices only on Wi-Fi";
+
+
+"speech_quality" = "Speech quality";
+
+
+"languages" = "Languages";
+
+
+"voice_remove_question" = "Are you sure you want to uninstall this voice?";
+
+
+"install" = "Install";
+
+
+"uninstall" = "Uninstall";
+
+
+"play" = "Play";
+
+
+"stop" = "Stop";
+
+
+"increase" = "Increase";
+
+
+"decrease" = "Decrease";
+
+
+"reset" = "Reset";
+
+
+"version" = "Version";
+
+
+"user_dicts" = "User dictionaries";
+
+
+"add" = "Add";
+
+
+"remove" = "Remove";
+
+
+"config_file" = "Configuration file";
+
+
+"metered_network_warning" = "This device is currently connected to a metered network. Would you like to download the voice later, when an unmetered network is available?";
+
+
+"download_now" = "Download now";
+
+
+"download_later" = "Download later";
+
+
+"string-array.quality_labels.item.quality_labels_1" = "Fir Telefonen mat nidderegem Energieverbrauch";
+
+
+"string-array.quality_labels.item.quality_labels_2" = "Héich Reaktiounsfäegkeet";
+
+
+"string-array.quality_labels.item.quality_labels_3" = "Bescht Qualitéit";
+
+
+"ios_no_languages" = "Keng Sproochen";
+
+
+"ios_main_screen_voiceover_message" = "D\'Lëscht vun de Sproochen ass uewen";
+
+
+"ios_installing_voice" = "Stëmm installéieren: %@";
+
+
+"ios_voice_version" = "Versioun: %@";
+
+
+"ios_uninstall_voice" = "Stëmm deinstalléieren: %@";
+
+
+"ios_install_voice" = "Stëmm installéieren: %@";
+
+
+"ios_uninstall_voice_hint" = "Duebeltippen fir déi ausgewielte Stëmm ze deinstalléieren.";
+
+
+"ios_install_voice_hint" = "Duebeltippen fir déi ausgewielte Stëmm z\'installéieren.";
+
+
+"ios_license" = "Lizenz:";
+
+
+"ios_yes" = "Jo";
+
+
+"ios_no" = "Nee";
+
+
+"Back" = "Zréck";
+
+
+"ios_no_voices" = "Keng Stëmmen";
+
+
+"ios_language_name_and_version" = "Sproochversioun: %@";
+
+
+"ios_language_screen_voiceover_message" = "D\'Lëscht vun de Stëmmen ass uewen";
+
+
+"ios_select_quality_voiceover_hint" = "Duebeltippen fir ze wielen";
+
+
+"ios_languages_settings" = "Sproochenastellungen";
+
+
+"ios_versions" = "Versiounen";
+
+
+"ios_application" = "Applikatioun";
+
+
+"ios_application_version_voiceover_label" = "Applikatiounsversioun: %@";
+
+
+"ios_engine_version_voiceover_label" = "RHVoice Engine Versioun: %@";
+
+
+"ios_done" = "Fäerdeg";
+
+
+"ios_language_switching" = "Sproochwiessel";
+
+
+"ios_unsupported_language_alert_message" = "VoiceOver ënnerstëtzt dës Sprooch nach net vollstänneg. Dir musst de Sproochwiessel vu VoiceOver op \'aus\' setzen an et als Rotor-Sprooch derbäisetzen.";
+
+
+"ios_ok" = "Okay";
+
+
+"ios_play_sample" = "Beispill spillen";
+
+
+"ios_voice_help_button" = "Wéi een dës Stëmm benotzt.";
+
+
+"ios_automatic_updates_on_wifi" = "Automatesch Aktualiséierungen op Wi-Fi";
+
+
+"ios_automatic_updates_on_wifi_description" = "Wann Dir dës Astellung aktivéiert, ginn d\'Stëmm- a Sproochpakete automatesch aktualiséiert, wärend d\'Applikatioun beim Start an am Hannergrond mat Wi-Fi verbonnen ass.";
+
+
+"ios_has_updates" = "Huet Updates";
+
+
+"ios_update" = "Aktualiséierung";
+
+
+"ios_licenses" = "Lizenzen";
+
+
+"ios_user_guide" = "Benotzerhandbuch";
+
+
+"ios_credit_line1" = "Verbindung vun [RHVoice](https://rhvoice.com) a VoiceOver, an Applikatiouns-UI entwéckelt vum [Ihor Shevchuk](https://github.com/IhorShevchuk)";
+
+
+"ios_credit_line2" = "All © Rechter gehéieren der NonRoutine LLC";
+
+
+"ios_app_jailbreak_warning" = "Warnung: Ären Apparat kéint kompromittéiert sinn, wat d\'Verhale vun der App beaflosse kéint.";
+
+
+"ios_app_sideloded_warning" = "Warnung: Dir kéint bedrunn gi sinn. D\'Applikatioun huet limitéiert Funktionalitéiten. Luet d\'App w.e.g. aus dem App Store erof.";
+
+
+"ios_refresh" = "Erfrëschen";
+
+
+"ios_userguide_link" = "https://rhvoice.com/apple_support#h1";
+
+
+"ios_go_to_appstore" = "Gitt an den App Store";
+
+
+"ios_cancel" = "Ofbriechen";
+
+
+"ios_try_a_subscription" = "Probéiert en Abonnement";
+
+
+"ios_subscription_description" = "Ier Dir en Abonnement kaaft, gitt sécher datt d\'Stëmm verbonnen ass a fir Iech funktionéiert. Dir héiert Demonstratiounsmeldungen, awer dës ginn ewechgeholl wann Dir en Abonnement hutt.";
+
+
+"ios_subscription_button" = "Abonnementsofferen ukucken";
+
+
+"ios_manage_subscription_button" = "Äert Abonnement verwalten";
+
+
+"ios_language_switching_name" = "Sproochwiessel";
+
+
+"ios_subscription_trial_suffix" = "Gratis, an duerno:.";
+
+
+"ios_subscription_auto_renewable" = "automatesch erneieren";
+
+
+"ios_subscription_non_renewable" = "virbezuelt";
+
+
+"ios_disconnected" = "Ofgetrennt";
+
+
+"ios_connected" = "Verbonnen";
+
+
+"ios_failed_to_connect" = "Konnt net verbannen";
+
+
+"ios_speech_engine" = "Sproochmotor";
+
+
+"string-array.ios_quality_labels_short.item.performance" = "Kierzst Äntwertzäit.";
+
+
+"string-array.ios_quality_labels_short.item.quality" = "Héchst Qualitéit";

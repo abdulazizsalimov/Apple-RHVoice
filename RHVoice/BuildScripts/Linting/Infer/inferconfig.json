@@ -1,0 +1,21 @@
+{
+    "clang-block-listed-flags-with-arg": [
+        "-ivfsstatcache"
+    ],
+    "results-dir":"./../../../../BuildOutput/infer-out",
+    "report-allow-list-path-regex": [
+        "src/apple/.*",
+        "src/core/.*",
+        "src/hts_engine/.*",
+        "src/pkg/.*",
+        "src/lib/.*",
+        "src/audio/.*"
+    ],
+    "report-block-list-path-regex": [
+        ".*"
+    ],
+    "pmd-xml":true,
+    "force-delete-results-dir": true,
+    "print-active-checkers":true,
+    "print-logs":true
+}

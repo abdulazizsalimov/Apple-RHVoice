@@ -1,0 +1,261 @@
+
+
+"default_voice_title" = "Կանխադրված ձայնը";
+
+
+"default_voice_dialog_title" = "Ընտրեք ձայն";
+
+
+"detect_language_title" = "Լեզվի հայտնաբերում";
+
+
+"detect_language_desc" = "Անցեք այս լեզվին, երբ այն հայտնաբերվի, և դուք սովորաբար օգտագործում եք այլ լեզու:";
+
+
+"speech_volume" = "Խոսքի ծավալը";
+
+
+"speech_rate" = "Խոսքի արագություն";
+
+
+"pseudo_english_title" = "Անգլերեն բառեր";
+
+
+"pseudo_english_desc" = "Փորձեք ճիշտ կարդալ անգլերեն բառերը";
+
+
+"settings" = "Կարգավորումներ";
+
+
+"wifi_only_title" = "Միայն Wi-Fi";
+
+
+"wifi_only_desc" = "Ներբեռնեք ձայները միայն Wi-Fi-ով";
+
+
+"speech_quality" = "Խոսքի որակ";
+
+
+"languages" = "Լեզուներ";
+
+
+"voice_remove_question" = "Իսկապե՞ս ուզում եք հեռացնել այս ձայնը:";
+
+
+"install" = "Տեղադրեք";
+
+
+"uninstall" = "Տեղահանել";
+
+
+"play" = "Խաղալ";
+
+
+"stop" = "Դադարեցրեք";
+
+
+"increase" = "Բարձրացնել";
+
+
+"decrease" = "Նվազում";
+
+
+"reset" = "Վերականգնել";
+
+
+"version" = "Տարբերակ";
+
+
+"user_dicts" = "Օգտատերերի բառարաններ";
+
+
+"add" = "Ավելացնել";
+
+
+"remove" = "Հեռացնել";
+
+
+"config_file" = "Կազմաձևման ֆայլ";
+
+
+"metered_network_warning" = "Այս սարքը ներկայումս միացված է բջջային ցանցին";
+
+
+"download_now" = "Ներբեռնեք հիմա";
+
+
+"download_later" = "Ներբեռնեք ավելի ուշ";
+
+
+"string-array.quality_labels.item_0" = "	Ցածր էներգիայի հեռախոսների համար";
+
+
+"string-array.quality_labels.item_1" = "     Բարձր արձագանքողություն";
+
+
+"string-array.quality_labels.item_2" = "     Լավագույն որակ";
+
+
+"ios_no_languages" = "Լեզուներ չկան";
+
+
+"ios_main_screen_voiceover_message" = "Լեզուների ցանկը վերևում է";
+
+
+"ios_installing_voice" = "Ձայնի տեղադրում՝ %@";
+
+
+"ios_voice_version" = "Տարբերակ՝ %@";
+
+
+"ios_uninstall_voice" = "Հեռացնել ձայնը՝ %@";
+
+
+"ios_install_voice" = "Տեղադրել ձայնը՝ %@";
+
+
+"ios_uninstall_voice_hint" = "Կրկնակի հպեք՝ ընտրված ձայնը ապատեղադրելու համար։";
+
+
+"ios_install_voice_hint" = "Կրկնակի հպեք՝ ընտրված ձայնը տեղադրելու համար։";
+
+
+"ios_license" = "Լիցենզիա՝";
+
+
+"ios_yes" = "Այո";
+
+
+"ios_no" = "Ոչ";
+
+
+"Back" = "Հետ";
+
+
+"ios_no_voices" = "Ձայներ չկան";
+
+
+"ios_language_name_and_version" = "Լեզվի տարբերակ՝ %@";
+
+
+"ios_language_screen_voiceover_message" = "Ձայների ցանկը վերևում է";
+
+
+"ios_select_quality_voiceover_hint" = "Կրկնակի հպեք՝ ընտրելու համար";
+
+
+"ios_languages_settings" = "Լեզուների կարգավորումներ";
+
+
+"ios_versions" = "Տարբերակներ";
+
+
+"ios_application" = "Դիմում";
+
+
+"ios_application_version_voiceover_label" = "Ծրագրի տարբերակը՝ %@";
+
+
+"ios_engine_version_voiceover_label" = "RHVoice շարժիչի տարբերակը՝ %@";
+
+
+"ios_done" = "Կատարված է";
+
+
+"ios_language_switching" = "Լեզվի փոխում";
+
+
+"ios_unsupported_language_alert_message" = "VoiceOver-ը դեռևս լիովին չի աջակցում այս լեզուն: Դուք պետք է VoiceOver լեզվի փոխարկիչը անջատեք «անջատված» դիրքում և ավելացնեք այն որպես Rotor լեզու:";
+
+
+"ios_ok" = "Լավ";
+
+
+"ios_play_sample" = "Նվագարկել նմուշը";
+
+
+"ios_voice_help_button" = "Ինչպես օգտագործել այս ձայնը։";
+
+
+"ios_automatic_updates_on_wifi" = "Ավտոմատ թարմացումներ Wi-Fi-ով";
+
+
+"ios_automatic_updates_on_wifi_description" = "Այս կարգավորումը միացնելը կհանգեցնի ձայնային և լեզվական փաթեթների ավտոմատ թարմացմանը՝ հավելվածի գործարկման ընթացքում և ֆոնային ռեժիմում Wi-Fi-ին միացված լինելու դեպքում:";
+
+
+"ios_has_updates" = "Ունի թարմացումներ";
+
+
+"ios_update" = "Թարմացում";
+
+
+"ios_licenses" = "Լիցենզիաներ";
+
+
+"ios_user_guide" = "Օգտագործողի ուղեցույց";
+
+
+"ios_credit_line1" = "[RHVoice](https://rhvoice.com) և VoiceOver-ի միացումը, ինչպես նաև [Իհոր Շևչուկի](https://github.com/IhorShevchuk) կողմից մշակված հավելվածի ինտերֆեյսը։";
+
+
+"ios_credit_line2" = "Բոլոր իրավունքները պատկանում են NonRoutine LLC-ին ©";
+
+
+"ios_app_jailbreak_warning" = "Զգուշացում. Ձեր սարքը կարող է վարակված լինել, ինչը կարող է ազդել հավելվածի աշխատանքի վրա։";
+
+
+"ios_app_sideloded_warning" = "Զգուշացում. Հնարավոր է՝ ձեզ խաբել են։ Հավելվածի ֆունկցիոնալությունը սահմանափակ կլինի։ Խնդրում ենք ներբեռնել հավելվածը App Store-ից։";
+
+
+"ios_refresh" = "Թարմացնել";
+
+
+"ios_userguide_link" = "https://rhvoice.com/apple_support#h1";
+
+
+"ios_go_to_appstore" = "Անցնել App Store";
+
+
+"ios_cancel" = "Չեղարկել";
+
+
+"ios_try_a_subscription" = "Փորձեք բաժանորդագրությունը";
+
+
+"ios_subscription_description" = "Նախքան բաժանորդագրություն գնելը, խնդրում ենք համոզվել, որ ձայնը միացված է և աշխատում է ձեզ համար: Դուք կլսեք ցուցադրական հաղորդագրություններ, բայց դրանք կհեռացվեն, երբ բաժանորդագրություն ունենաք:";
+
+
+"ios_subscription_button" = "Դիտել բաժանորդագրության առաջարկները";
+
+
+"ios_manage_subscription_button" = "Կառավարեք ձեր բաժանորդագրությունը";
+
+
+"ios_language_switching_name" = "Լեզվի փոխում";
+
+
+"ios_subscription_trial_suffix" = "անվճար, իսկ հետո՝";
+
+
+"ios_subscription_auto_renewable" = "ավտոմատ կերպով թարմացվող";
+
+
+"ios_subscription_non_renewable" = "նախապես վճարված";
+
+
+"ios_disconnected" = "Անջատված է";
+
+
+"ios_connected" = "Միացված է";
+
+
+"ios_failed_to_connect" = "Չհաջողվեց միանալ";
+
+
+"ios_speech_engine" = "Խոսքի շարժիչ";
+
+
+"string-array.ios_quality_labels_short.item.performance" = "ամենակարճ արձագանքման ժամանակը։";
+
+
+"string-array.ios_quality_labels_short.item.quality" = "ամենաբարձր որակը";

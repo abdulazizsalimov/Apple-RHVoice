@@ -1,0 +1,261 @@
+
+
+"default_voice_title" = "voix par défaut";
+
+
+"default_voice_dialog_title" = "sélectionnez une voix";
+
+
+"detect_language_title" = "Détection de la langue";
+
+
+"detect_language_desc" = "passez à cette langue lorsqu\'elle est détectée et que vous utilisez normalement une autre langue.";
+
+
+"speech_volume" = "volume de la parole";
+
+
+"speech_rate" = "débit de parole";
+
+
+"pseudo_english_title" = "mots anglais";
+
+
+"pseudo_english_desc" = "essayez de lire correctement les mots anglais";
+
+
+"settings" = "Paramètres";
+
+
+"wifi_only_title" = "Wi-Fi uniquement";
+
+
+"wifi_only_desc" = "télécharger les voix uniquement sur le Wi-Fi";
+
+
+"speech_quality" = "qualité de la parole";
+
+
+"languages" = "Langues";
+
+
+"voice_remove_question" = "Êtes-vous sûr de vouloir désinstaller cette voix ?";
+
+
+"install" = "Installer";
+
+
+"uninstall" = "Désinstaller";
+
+
+"play" = "Jouer";
+
+
+"stop" = "Arrêter";
+
+
+"increase" = "Augmenter";
+
+
+"decrease" = "Diminuer";
+
+
+"reset" = "Réinitialiser";
+
+
+"version" = "Version";
+
+
+"user_dicts" = "Dictionnaires utilisateur";
+
+
+"add" = "Ajouter";
+
+
+"remove" = "Supprimer";
+
+
+"config_file" = "fichier de configuration";
+
+
+"metered_network_warning" = "Cet appareil est actuellement connecté à un réseau à tarif limité. Souhaitez-vous télécharger la voix plus tard, lorsqu\'un réseau à tarif illimité sera disponible ?";
+
+
+"download_now" = "Télécharger maintenant";
+
+
+"download_later" = "Télécharger plus tard";
+
+
+"string-array.quality_labels.item.quality_labels_1" = "pour les téléphones à faible consommation d\'énergie";
+
+
+"string-array.quality_labels.item.quality_labels_2" = "Haute réactivité";
+
+
+"string-array.quality_labels.item.quality_labels_3" = "Meilleure qualité";
+
+
+"ios_no_languages" = "Aucune langue";
+
+
+"ios_main_screen_voiceover_message" = "La liste des langues est en haut";
+
+
+"ios_installing_voice" = "Installation de la voix : %@";
+
+
+"ios_voice_version" = "Version: %@";
+
+
+"ios_uninstall_voice" = "Désinstaller la voix : %@";
+
+
+"ios_install_voice" = "Installer la voix : %@";
+
+
+"ios_uninstall_voice_hint" = "Appuyez deux fois pour désinstaller la voix sélectionnée.";
+
+
+"ios_install_voice_hint" = "Appuyez deux fois pour installer la voix sélectionnée.";
+
+
+"ios_license" = "Licence:";
+
+
+"ios_yes" = "Oui";
+
+
+"ios_no" = "Non";
+
+
+"Back" = "Dos";
+
+
+"ios_no_voices" = "Pas de voix";
+
+
+"ios_language_name_and_version" = "Version linguistique : %@";
+
+
+"ios_language_screen_voiceover_message" = "La liste des voix est en haut";
+
+
+"ios_select_quality_voiceover_hint" = "Appuyez deux fois pour sélectionner";
+
+
+"ios_languages_settings" = "Paramètres de langues";
+
+
+"ios_versions" = "Versions";
+
+
+"ios_application" = "Application";
+
+
+"ios_application_version_voiceover_label" = "Version de l\'application : %@";
+
+
+"ios_engine_version_voiceover_label" = "Version du moteur RHVoice : %@";
+
+
+"ios_done" = "Fait";
+
+
+"ios_language_switching" = "Changement de langue";
+
+
+"ios_unsupported_language_alert_message" = "VoiceOver ne prend pas encore entièrement en charge cette langue. Vous devez désactiver le changement de langue de VoiceOver et l\'ajouter comme langue Rotor.";
+
+
+"ios_ok" = "D\'accord";
+
+
+"ios_play_sample" = "Écouter un échantillon";
+
+
+"ios_voice_help_button" = "Comment utiliser cette voix.";
+
+
+"ios_automatic_updates_on_wifi" = "Mises à jour automatiques sur Wi-Fi";
+
+
+"ios_automatic_updates_on_wifi_description" = "L\'activation de ce paramètre entraînera des mises à jour automatiques des packs vocaux et linguistiques lors de la connexion au Wi-Fi au démarrage de l\'application et en arrière-plan.";
+
+
+"ios_has_updates" = "A des mises à jour";
+
+
+"ios_update" = "Mise à jour";
+
+
+"ios_licenses" = "Licences";
+
+
+"ios_user_guide" = "Guide de l\'utilisateur";
+
+
+"ios_credit_line1" = "Connexion de [RHVoice](https://rhvoice.com) et VoiceOver, et interface utilisateur de l\'application développée par [Ihor Shevchuk](https://github.com/IhorShevchuk)";
+
+
+"ios_credit_line2" = "Tous droits © appartiennent à NonRoutine LLC";
+
+
+"ios_app_jailbreak_warning" = "Avertissement : votre appareil peut être compromis, ce qui pourrait affecter le comportement de l’application.";
+
+
+"ios_app_sideloded_warning" = "Attention : vous avez peut-être été victime d\'une arnaque. Les fonctionnalités de l\'application sont limitées. Veuillez la télécharger depuis l\'App Store.";
+
+
+"ios_refresh" = "Rafraîchir";
+
+
+"ios_userguide_link" = "https://rhvoice.com/apple_support#h1";
+
+
+"ios_go_to_appstore" = "Accéder à l\'App Store";
+
+
+"ios_cancel" = "Annuler";
+
+
+"ios_try_a_subscription" = "Essayez un abonnement";
+
+
+"ios_subscription_description" = "Avant de souscrire un abonnement, assurez-vous que la voix est connectée et fonctionne. Vous entendrez des messages de démonstration, mais ils disparaîtront une fois l\'abonnement souscrit.";
+
+
+"ios_subscription_button" = "Voir les offres d\'abonnement";
+
+
+"ios_manage_subscription_button" = "Gérez votre abonnement";
+
+
+"ios_language_switching_name" = "Changement de langue";
+
+
+"ios_subscription_trial_suffix" = "Gratuit, et après :.";
+
+
+"ios_subscription_auto_renewable" = "renouvellement automatique";
+
+
+"ios_subscription_non_renewable" = "prépayé";
+
+
+"ios_disconnected" = "Déconnecté";
+
+
+"ios_connected" = "Connecté";
+
+
+"ios_failed_to_connect" = "Échec de la connexion";
+
+
+"ios_speech_engine" = "Moteur vocal";
+
+
+"string-array.ios_quality_labels_short.item.performance" = "temps de réponse le plus court.";
+
+
+"string-array.ios_quality_labels_short.item.quality" = "qualité supérieure";

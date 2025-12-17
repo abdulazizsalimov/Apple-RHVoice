@@ -1,0 +1,22 @@
+#include "common.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = $(APP_BUNDLE_IDENTIFIER)
+
+CODE_SIGN_ENTITLEMENTS[sdk=macosx*] = RHVoice/Resources/RHVoiceRegularMacOS.entitlements
+ENABLE_APP_SANDBOX[sdk=macosx*] = YES // we need to have YES here in order to be published in AppStore
+
+// Application display name
+INFOPLIST_KEY_CFBundleDisplayName = RHVoice
+// Applicaiton icon specified in Assets.xcassets
+ASSETCATALOG_COMPILER_APPICON_NAME = RegularAppIcon
+// Applicaiton color specified in Assets.xcassets
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = RegularAccentColor
+// macOS support
+SUPPORTS_MACCATALYST = NO
+SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO
+// Supported platforms
+SUPPORTED_PLATFORMS = iphoneos iphonesimulator macosx
+// Supported languages. Has to be a sub set of SUPPORTED_LANGUAGES declared in ../config.xcconfig
+APP_SUPPORTED_LANGUAGES = en sq mk fr de pt es lb ru hy
+
+#include "../combine.xcconfig"

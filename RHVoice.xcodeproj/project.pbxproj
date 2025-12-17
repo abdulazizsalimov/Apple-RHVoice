@@ -1,0 +1,2018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 90;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01084C2D28D259B200D0148A /* PackageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C2C28D259B200D0148A /* PackageInfo.swift */; };
+		01084C2F28D259CD00D0148A /* Language+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C2E28D259CD00D0148A /* Language+Additions.swift */; };
+		01084C3128D259E800D0148A /* Voice+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C3028D259E800D0148A /* Voice+Additions.swift */; };
+		01084C3328D25AB400D0148A /* Version+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C3228D25AB400D0148A /* Version+Additions.swift */; };
+		01084C3628D260A700D0148A /* RHVoiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C3528D260A700D0148A /* RHVoiceManager.swift */; };
+		01084C3828D260DA00D0148A /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C3728D260DA00D0148A /* AppManager.swift */; };
+		01084C3A28D260FA00D0148A /* APIConnectorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C3928D260FA00D0148A /* APIConnectorInterface.swift */; };
+		01084C3F28D2687900D0148A /* LanguageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C3C28D2687900D0148A /* LanguageContentView.swift */; };
+		01084C4028D2687900D0148A /* LanguageHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C3D28D2687900D0148A /* LanguageHostModel.swift */; };
+		01084C4128D2687900D0148A /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C3E28D2687900D0148A /* LanguageViewModel.swift */; };
+		010F3DDD2A03BBD100F36F3A /* RHSpeechSynthesizerTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F3DDC2A03BBD100F36F3A /* RHSpeechSynthesizerTestData.swift */; };
+		011540F5294F656D00089E37 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011540F4294F656D00089E37 /* StorageManager.swift */; };
+		01162F76292A9F5800A5FFD5 /* RHSpeechUtteranceQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01162F75292A9F5800A5FFD5 /* RHSpeechUtteranceQuality.swift */; };
+		01162F87292AA59400A5FFD5 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01162F86292AA59400A5FFD5 /* Bundle.swift */; };
+		01162F90292AA6C100A5FFD5 /* LanguageSettingsHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01162F89292AA6C100A5FFD5 /* LanguageSettingsHostModel.swift */; };
+		01162F91292AA6C100A5FFD5 /* LanguageSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01162F8A292AA6C100A5FFD5 /* LanguageSettingsViewModel.swift */; };
+		01162F92292AA6C100A5FFD5 /* LanguageSettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01162F8B292AA6C100A5FFD5 /* LanguageSettingsContentView.swift */; };
+		01162F93292AA6C100A5FFD5 /* SettingsHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01162F8D292AA6C100A5FFD5 /* SettingsHostModel.swift */; };
+		01162F94292AA6C100A5FFD5 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01162F8E292AA6C100A5FFD5 /* SettingsViewModel.swift */; };
+		01162F95292AA6C100A5FFD5 /* SettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01162F8F292AA6C100A5FFD5 /* SettingsContentView.swift */; };
+		0143211A2A00279A009B5FD9 /* RHSpeechUtteranceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014321172A002792009B5FD9 /* RHSpeechUtteranceTests.swift */; };
+		01447AF829F7050A0067985E /* RHVoiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01447AF729F7050A0067985E /* RHVoiceUITests.swift */; };
+		01447B0429F705540067985E /* LanguagesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01447B0329F705540067985E /* LanguagesScreen.swift */; };
+		01447B0629F7055E0067985E /* VoicesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01447B0529F7055E0067985E /* VoicesScreen.swift */; };
+		01447B0829F705660067985E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01447B0729F705660067985E /* SettingsScreen.swift */; };
+		01447B0A29F705740067985E /* LanguageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01447B0929F705740067985E /* LanguageSettings.swift */; };
+		01447B0C29F7058B0067985E /* ScreenBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01447B0B29F7058B0067985E /* ScreenBase.swift */; };
+		01447B1029F705D40067985E /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01447B0E29F705D40067985E /* BaseTestCase.swift */; };
+		01447B1729F707A70067985E /* RHVoice in Frameworks */ = {isa = PBXBuildFile; productRef = 01447B1629F707A70067985E /* RHVoice */; };
+		01447B1929F707C00067985E /* RHVoice in Frameworks */ = {isa = PBXBuildFile; productRef = 01447B1829F707C00067985E /* RHVoice */; };
+		01447B1D29F710FD0067985E /* XCUIElementQueryIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01447B1C29F710FD0067985E /* XCUIElementQueryIterator.swift */; };
+		01447B1F29F721B00067985E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01447B1E29F721B00067985E /* String.swift */; };
+		01447B2429F72A030067985E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01447B2329F72A030067985E /* SnapshotHelper.swift */; };
+		015C0A28296742710005566E /* Licenses.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015C0A27296742710005566E /* Licenses.xcassets */; };
+		015C0A2B29674A130005566E /* LicensesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C0A2A29674A130005566E /* LicensesContentView.swift */; };
+		015C0A2D29674A1F0005566E /* LicensesHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C0A2C29674A1F0005566E /* LicensesHostModel.swift */; };
+		015C0A2F29674A290005566E /* LicensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C0A2E29674A290005566E /* LicensesViewModel.swift */; };
+		015E747E28D1CF6700CE131D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 015E747D28D1CF5E00CE131D /* libc++.tbd */; };
+		015E748028D1CF7900CE131D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 015E747F28D1CF7400CE131D /* libz.tbd */; };
+		015E748C28D1D64D00CE131D /* APIConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015E748B28D1D64D00CE131D /* APIConnector.swift */; };
+		0171DAB428CFA0B3004BC275 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171DAB328CFA0B3004BC275 /* MainContentView.swift */; };
+		0171DAC828CFA0B3004BC275 /* MainHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171DAC728CFA0B3004BC275 /* MainHostModel.swift */; };
+		0171DACA28CFA0B3004BC275 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171DAC928CFA0B3004BC275 /* MainViewModel.swift */; };
+		0171DACC28CFA0B3004BC275 /* RHVoiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171DACB28CFA0B3004BC275 /* RHVoiceApp.swift */; };
+		0171DAEA28CFA0B5004BC275 /* RHVoiceExtensionAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171DAE928CFA0B5004BC275 /* RHVoiceExtensionAudioUnit.swift */; };
+		0171DAF028CFA0B5004BC275 /* AudioUnitFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171DAEF28CFA0B5004BC275 /* AudioUnitFactory.swift */; };
+		01756C652921402C00BB8CCE /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01756C642921402C00BB8CCE /* CoreAudio.framework */; };
+		01763FF32A00187100BE914F /* ResourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01763FF22A00187100BE914F /* ResourseInfo.swift */; };
+		01763FF62A001D8300BE914F /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01763FF52A001D8300BE914F /* XCTestCase.swift */; };
+		0178F07F2A0394A000941356 /* RHSpeechSynthesizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0178F07E2A0394A000941356 /* RHSpeechSynthesizerTests.swift */; };
+		0178F0822A0396A800941356 /* FileManager+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0178F0812A0396A800941356 /* FileManager+Utils.swift */; };
+		0179C46729F59F86009B957E /* BackgroundTasksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179C46629F59F86009B957E /* BackgroundTasksManager.swift */; };
+		017C71842937EC6700F71ABF /* CShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C71832937EC6700F71ABF /* CShort.swift */; };
+		017C718A2937ECAD00F71ABF /* RHSpeechSynthesisMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C71892937ECAD00F71ABF /* RHSpeechSynthesisMarker.swift */; };
+		017F3DA029F44B15008B439D /* Array+SynthesisVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3D9D29F44B15008B439D /* Array+SynthesisVoice.swift */; };
+		017F3DA129F44B15008B439D /* Array+SynthesisVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3D9D29F44B15008B439D /* Array+SynthesisVoice.swift */; };
+		017F3DA229F44B15008B439D /* RHSpeechSynthesisVoiceGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3D9E29F44B15008B439D /* RHSpeechSynthesisVoiceGender.swift */; };
+		017F3DA329F44B15008B439D /* RHSpeechSynthesisVoiceGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3D9E29F44B15008B439D /* RHSpeechSynthesisVoiceGender.swift */; };
+		017F3DA429F44B15008B439D /* RHSpeechSynthesisProviderVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3D9F29F44B15008B439D /* RHSpeechSynthesisProviderVoice.swift */; };
+		017F3DA529F44B15008B439D /* RHSpeechSynthesisProviderVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3D9F29F44B15008B439D /* RHSpeechSynthesisProviderVoice.swift */; };
+		018063A529D06EBD00813758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0104E46729D06DA200E8F772 /* Assets.xcassets */; };
+		018063B829D0790E00813758 /* SettingsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063A929D0790E00813758 /* SettingsItems.swift */; };
+		018063BA29D0790E00813758 /* LanguageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AA29D0790E00813758 /* LanguageSettings.swift */; };
+		018063BC29D0790E00813758 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AB29D0790E00813758 /* SettingsStore.swift */; };
+		018063BE29D0790E00813758 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AC29D0790E00813758 /* Logger.swift */; };
+		018063C029D0790E00813758 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AD29D0790E00813758 /* FileManager.swift */; };
+		018063C229D0790E00813758 /* RHSpeechUtterance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AF29D0790E00813758 /* RHSpeechUtterance.swift */; };
+		018063C329D0790E00813758 /* RHSpeechUtterance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AF29D0790E00813758 /* RHSpeechUtterance.swift */; };
+		018063CC29D079AD00813758 /* RHVoice in Frameworks */ = {isa = PBXBuildFile; productRef = 018063CB29D079AD00813758 /* RHVoice */; };
+		018063CE29D079B600813758 /* RHVoice in Frameworks */ = {isa = PBXBuildFile; productRef = 018063CD29D079B600813758 /* RHVoice */; };
+		01959A6B296438250085D9FB /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01959A6A296438250085D9FB /* ReachabilityManager.swift */; };
+		019D8F3B291FE96D00124CD0 /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 019D8F3A291FE95D00124CD0 /* libcurl.tbd */; platformFilters = (maccatalyst, macos, ); };
+		019D8F3C291FE98C00124CD0 /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 019D8F3A291FE95D00124CD0 /* libcurl.tbd */; platformFilters = (maccatalyst, macos, ); };
+		01B75C9F294366BF009060FD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B75C9E294366BE009060FD /* String.swift */; };
+		01B9947F2A1A107300731222 /* VoiceHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B9947C2A1A107300731222 /* VoiceHostModel.swift */; };
+		01B994802A1A107300731222 /* VoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B9947D2A1A107300731222 /* VoiceViewModel.swift */; };
+		01B994832A1A13E300731222 /* VoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B994822A1A13E300731222 /* VoiceView.swift */; };
+		01B994952A1A796300731222 /* TimeInterval+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B994942A1A796300731222 /* TimeInterval+Constants.swift */; };
+		01B994962A1A796300731222 /* TimeInterval+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B994942A1A796300731222 /* TimeInterval+Constants.swift */; };
+		01BC146B2AD9A684003E6E99 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 01BC146A2AD9A684003E6E99 /* Localizable.xcstrings */; };
+		01BC146E2AD9A936003E6E99 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC146D2AD9A936003E6E99 /* String.swift */; };
+		01BC14702AD9AFF0003E6E99 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC146D2AD9A936003E6E99 /* String.swift */; };
+		01BC14722AD9B05B003E6E99 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 01BC146A2AD9A684003E6E99 /* Localizable.xcstrings */; };
+		01BC14752AD9B200003E6E99 /* AVSpeechSynthesisProviderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E915542AD87A640051FF87 /* AVSpeechSynthesisProviderRequest.swift */; };
+		01E915552AD87A640051FF87 /* AVSpeechSynthesisProviderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E915542AD87A640051FF87 /* AVSpeechSynthesisProviderRequest.swift */; };
+		01E915592AD87AB60051FF87 /* AVSpeechSynthesisProviderRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E915582AD87AB60051FF87 /* AVSpeechSynthesisProviderRequestTests.swift */; };
+		01E9F989296AD0E100EA4DE7 /* SerialTasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9F988296AD0E100EA4DE7 /* SerialTasksTests.swift */; };
+		01E9F98B296AD8C000EA4DE7 /* VersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9F98A296AD8C000EA4DE7 /* VersionTests.swift */; };
+		01E9F98D296ADB8900EA4DE7 /* VoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9F98C296ADB8900EA4DE7 /* VoiceTests.swift */; };
+		01F12D502A0671A800F63F93 /* RHSpeechSynthesisMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C71892937ECAD00F71ABF /* RHSpeechSynthesisMarker.swift */; };
+		01F12D532A0672B300F63F93 /* CShortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F12D522A0672B300F63F93 /* CShortTests.swift */; };
+		01F12D542A06810900F63F93 /* CShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C71832937EC6700F71ABF /* CShort.swift */; };
+		01F2E77329FEFFB300AC7B28 /* APIConnectorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2E77229FEFFB300AC7B28 /* APIConnectorMock.swift */; };
+		01F2E77E29FF0A5D00AC7B28 /* RHVoice.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F2E77D29FF0A5D00AC7B28 /* RHVoice.json */; };
+		01F2E78429FF0C4D00AC7B28 /* AppManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2E78329FF0C4D00AC7B28 /* AppManagerMock.swift */; };
+		01F2E78929FF146700AC7B28 /* RHVersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2E78629FF13C000AC7B28 /* RHVersionInfo.swift */; };
+		01F73CB2290FBFC300CD0ADA /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F73CB1290FBFC300CD0ADA /* NSAttributedString.swift */; };
+		01F837A828D72C2600945210 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F837A728D72C2500945210 /* AVFoundation.framework */; };
+		01F837AE28D740B200945210 /* SerialTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F837AD28D740B200945210 /* SerialTasks.swift */; };
+		69121C5D2CEC626700B51E4A /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AD29D0790E00813758 /* FileManager.swift */; };
+		69121C5F2CEC626700B51E4A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AC29D0790E00813758 /* Logger.swift */; };
+		69121C612CEC626700B51E4A /* SettingsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063A929D0790E00813758 /* SettingsItems.swift */; };
+		69121C622CEC626700B51E4A /* LanguageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AA29D0790E00813758 /* LanguageSettings.swift */; };
+		69121C642CEC626700B51E4A /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AB29D0790E00813758 /* SettingsStore.swift */; };
+		69121C692CEC627900B51E4A /* RHVoiceExtensionAudioUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69121C682CEC627900B51E4A /* RHVoiceExtensionAudioUnitTests.swift */; };
+		69121C6B2CEC628C00B51E4A /* RHVoiceExtensionAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171DAE928CFA0B5004BC275 /* RHVoiceExtensionAudioUnit.swift */; };
+		69121C6C2CEC62AA00B51E4A /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AD29D0790E00813758 /* FileManager.swift */; };
+		69121C6E2CEC62AA00B51E4A /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AB29D0790E00813758 /* SettingsStore.swift */; };
+		69121C712CEC62AA00B51E4A /* SettingsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063A929D0790E00813758 /* SettingsItems.swift */; };
+		69121C732CEC62AA00B51E4A /* LanguageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AA29D0790E00813758 /* LanguageSettings.swift */; };
+		69121C752CEC62AA00B51E4A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018063AC29D0790E00813758 /* Logger.swift */; };
+		69121C792CEC630C00B51E4A /* RHSpeechSynthesisProviderVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3D9F29F44B15008B439D /* RHSpeechSynthesisProviderVoice.swift */; };
+		69121C7B2CEC632800B51E4A /* Array+SynthesisVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3D9D29F44B15008B439D /* Array+SynthesisVoice.swift */; };
+		69121C7D2CEC633700B51E4A /* RHSpeechSynthesisVoiceGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3D9E29F44B15008B439D /* RHSpeechSynthesisVoiceGender.swift */; };
+		6921F38E2EA4923B0001CE23 /* URL+Open.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921F38C2EA492350001CE23 /* URL+Open.swift */; };
+		6921F3922EA494520001CE23 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921F3912EA494510001CE23 /* SafariView.swift */; };
+		692754112E104BBE0071878E /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927540E2E104BBE0071878E /* MessageHandler.swift */; };
+		692754122E104BBE0071878E /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927540F2E104BBE0071878E /* MessageType.swift */; };
+		692754132E104BBE0071878E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927540D2E104BBE0071878E /* Message.swift */; };
+		692754142E104BBE0071878E /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927540E2E104BBE0071878E /* MessageHandler.swift */; };
+		692754152E104BBE0071878E /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927540F2E104BBE0071878E /* MessageType.swift */; };
+		692754162E104BBE0071878E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927540D2E104BBE0071878E /* Message.swift */; };
+		692754172E104BBE0071878E /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927540E2E104BBE0071878E /* MessageHandler.swift */; };
+		692754182E104BBE0071878E /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927540F2E104BBE0071878E /* MessageType.swift */; };
+		692754192E104BBE0071878E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927540D2E104BBE0071878E /* Message.swift */; };
+		692754202E104C940071878E /* GetVoicesMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927541E2E104C8E0071878E /* GetVoicesMessage.swift */; };
+		692754212E104C940071878E /* GetVoicesMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927541E2E104C8E0071878E /* GetVoicesMessage.swift */; };
+		692754222E104C940071878E /* GetVoicesMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927541E2E104C8E0071878E /* GetVoicesMessage.swift */; };
+		692754272E104F820071878E /* RHVoiceMessageChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692754252E104F7C0071878E /* RHVoiceMessageChannel.swift */; };
+		692754282E104F820071878E /* RHVoiceMessageChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692754252E104F7C0071878E /* RHVoiceMessageChannel.swift */; };
+		6927542B2E1050BA0071878E /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927542A2E1050BA0071878E /* MessageResponse.swift */; };
+		6927542C2E1050BA0071878E /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927542A2E1050BA0071878E /* MessageResponse.swift */; };
+		6927542D2E1050BA0071878E /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927542A2E1050BA0071878E /* MessageResponse.swift */; };
+		692754382E10ED770071878E /* SetVoicesMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692754362E10ED720071878E /* SetVoicesMessage.swift */; };
+		692754392E10ED770071878E /* SetVoicesMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692754362E10ED720071878E /* SetVoicesMessage.swift */; };
+		6927543A2E10ED770071878E /* SetVoicesMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692754362E10ED720071878E /* SetVoicesMessage.swift */; };
+		6927543E2E10F5800071878E /* RHFileBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927543C2E10F57C0071878E /* RHFileBacked.swift */; };
+		6927543F2E10F5800071878E /* RHFileBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927543C2E10F57C0071878E /* RHFileBacked.swift */; };
+		692754402E10F5800071878E /* RHFileBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927543C2E10F57C0071878E /* RHFileBacked.swift */; };
+		69420D4B2D8FD15500327E8B /* LanguageSwitchingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69420D4A2D8FD15300327E8B /* LanguageSwitchingProfile.swift */; };
+		69420D4C2D8FD15500327E8B /* LanguageSwitchingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69420D4A2D8FD15300327E8B /* LanguageSwitchingProfile.swift */; };
+		69420D4D2D8FD15500327E8B /* LanguageSwitchingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69420D4A2D8FD15300327E8B /* LanguageSwitchingProfile.swift */; };
+		69420D4F2D90F50200327E8B /* VoiceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69420D4E2D90F4FE00327E8B /* VoiceSettings.swift */; };
+		69420D502D90F50200327E8B /* VoiceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69420D4E2D90F4FE00327E8B /* VoiceSettings.swift */; };
+		69420D512D90F50200327E8B /* VoiceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69420D4E2D90F4FE00327E8B /* VoiceSettings.swift */; };
+		69420D532D90FAAD00327E8B /* SettingsStore+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69420D522D90FAA900327E8B /* SettingsStore+Additions.swift */; };
+		694CEDFA2DF4F1AD002EDCFC /* BaseHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CEDF92DF4F1AD002EDCFC /* BaseHostModel.swift */; };
+		694CEDFC2DF50B33002EDCFC /* GeneratedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CEDFB2DF50B33002EDCFC /* GeneratedConstants.swift */; };
+		694CEDFE2DF50BA7002EDCFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CEDFD2DF50BA7002EDCFC /* Constants.swift */; };
+		694CEDFF2DF50BA7002EDCFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CEDFD2DF50BA7002EDCFC /* Constants.swift */; };
+		694CEE002DF50BA7002EDCFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CEDFD2DF50BA7002EDCFC /* Constants.swift */; };
+		697FF8D82E04DD82006992A0 /* RHVoiceManager+Synthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697FF8D72E04DD71006992A0 /* RHVoiceManager+Synthesizer.swift */; };
+		6985213B2DB4B29C00DA8E43 /* RHVoiceManager+RHVoiceLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6985213A2DB4B29800DA8E43 /* RHVoiceManager+RHVoiceLoggerProtocol.swift */; };
+		6990A2862DF3F73D007AA700 /* RHVoiceManager+AVVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990A2852DF3F72F007AA700 /* RHVoiceManager+AVVoice.swift */; };
+		6990A2882DF40577007AA700 /* RHVoiceAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990A2872DF40577007AA700 /* RHVoiceAudioUnit.swift */; };
+		69A8CD772EF2752D00346E35 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01744A58293E5854005530F7 /* Localizable.strings */; };
+		69CF22292DBE9C9800627422 /* RHVoiceApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF22282DBE9C9200627422 /* RHVoiceApplicationDelegate.swift */; };
+		69D749072E1F8A7000417A4D /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 69D749062E1F8A7000417A4D /* ZIPFoundation */; };
+		69E588CE2EF26DB200199296 /* cacert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 69E588CD2EF26DB200199296 /* cacert.pem */; };
+		69F5E8A52E75297500C85733 /* IsSynthesizingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F5E8A12E75295400C85733 /* IsSynthesizingMessage.swift */; };
+		69F5E8A62E75297500C85733 /* IsSynthesizingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F5E8A12E75295400C85733 /* IsSynthesizingMessage.swift */; };
+		69F5E8A72E75297500C85733 /* IsSynthesizingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F5E8A12E75295400C85733 /* IsSynthesizingMessage.swift */; };
+		69F5E8C32E75302100C85733 /* RHVoiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0171DAD728CFA0B5004BC275 /* RHVoiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69FCA39E2EFC87B400E9BEB1 /* GeneratedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CEDFB2DF50B33002EDCFC /* GeneratedConstants.swift */; };
+		69FEA4AB2D21E17700C34F16 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4AA2D21E17100C34F16 /* Product.swift */; };
+		69FEA4AF2D21F9BE00C34F16 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4AE2D21F9BD00C34F16 /* Language.swift */; };
+		69FEA4B02D21F9BE00C34F16 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4AE2D21F9BD00C34F16 /* Language.swift */; };
+		69FEA4B12D21F9BE00C34F16 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4AE2D21F9BD00C34F16 /* Language.swift */; };
+		69FEA4B32D21FA2C00C34F16 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4B22D21FA1700C34F16 /* Voice.swift */; };
+		69FEA4B42D21FA2C00C34F16 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4B22D21FA1700C34F16 /* Voice.swift */; };
+		69FEA4B52D21FA2C00C34F16 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4B22D21FA1700C34F16 /* Voice.swift */; };
+		69FEA4B72D21FA4700C34F16 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4B62D21FA4600C34F16 /* Version.swift */; };
+		69FEA4B82D21FA4700C34F16 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4B62D21FA4600C34F16 /* Version.swift */; };
+		69FEA4B92D21FA4700C34F16 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4B62D21FA4600C34F16 /* Version.swift */; };
+		69FEA4BB2D21FAD700C34F16 /* RHVoiceApiBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4BA2D21FACF00C34F16 /* RHVoiceApiBridge.swift */; };
+		69FEA4BC2D21FAD700C34F16 /* RHVoiceApiBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4BA2D21FACF00C34F16 /* RHVoiceApiBridge.swift */; };
+		69FEA4BD2D21FAD700C34F16 /* RHVoiceApiBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4BA2D21FACF00C34F16 /* RHVoiceApiBridge.swift */; };
+		69FEA4BE2D21FBA100C34F16 /* PackageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C2C28D259B200D0148A /* PackageInfo.swift */; };
+		69FEA4BF2D21FBA600C34F16 /* PackageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01084C2C28D259B200D0148A /* PackageInfo.swift */; };
+		69FEA4C02D21FBB100C34F16 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4AA2D21E17100C34F16 /* Product.swift */; };
+		69FEA4C12D21FBB100C34F16 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4AA2D21E17100C34F16 /* Product.swift */; };
+		69FEA4C32D220A4000C34F16 /* RHVoiceBridgeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4C22D220A3E00C34F16 /* RHVoiceBridgeParams.swift */; };
+		69FEA4C42D220A4000C34F16 /* RHVoiceBridgeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4C22D220A3E00C34F16 /* RHVoiceBridgeParams.swift */; };
+		69FEA4C52D220A4000C34F16 /* RHVoiceBridgeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEA4C22D220A3E00C34F16 /* RHVoiceBridgeParams.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01447AFB29F7050A0067985E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0171DAA828CFA0B3004BC275 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0171DAAF28CFA0B3004BC275;
+			remoteInfo = RHVoiceApp;
+		};
+		01E9F983296AC51800EA4DE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0171DAA828CFA0B3004BC275 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0171DAAF28CFA0B3004BC275;
+			remoteInfo = RHVoiceApp;
+		};
+		691364732E696A3400BDA382 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0171DAA828CFA0B3004BC275 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 691364132E695FFA00BDA382;
+			remoteInfo = RHVoiceStandalone;
+		};
+		691364782E696A3C00BDA382 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0171DAA828CFA0B3004BC275 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 691364132E695FFA00BDA382;
+			remoteInfo = RHVoiceStandalone;
+		};
+		69F5E8C42E75302100C85733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0171DAA828CFA0B3004BC275 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0171DAD628CFA0B5004BC275;
+			remoteInfo = RHVoiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		691364752E696A3400BDA382 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				69F5E8C32E75302100C85733 /* RHVoiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0104E46729D06DA200E8F772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01084C2C28D259B200D0148A /* PackageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageInfo.swift; sourceTree = "<group>"; };
+		01084C2E28D259CD00D0148A /* Language+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Language+Additions.swift"; sourceTree = "<group>"; };
+		01084C3028D259E800D0148A /* Voice+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Voice+Additions.swift"; sourceTree = "<group>"; };
+		01084C3228D25AB400D0148A /* Version+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Version+Additions.swift"; sourceTree = "<group>"; };
+		01084C3528D260A700D0148A /* RHVoiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVoiceManager.swift; sourceTree = "<group>"; };
+		01084C3728D260DA00D0148A /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		01084C3928D260FA00D0148A /* APIConnectorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnectorInterface.swift; sourceTree = "<group>"; };
+		01084C3C28D2687900D0148A /* LanguageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageContentView.swift; sourceTree = "<group>"; };
+		01084C3D28D2687900D0148A /* LanguageHostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageHostModel.swift; sourceTree = "<group>"; };
+		01084C3E28D2687900D0148A /* LanguageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
+		010F3DDC2A03BBD100F36F3A /* RHSpeechSynthesizerTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHSpeechSynthesizerTestData.swift; sourceTree = "<group>"; };
+		011540F4294F656D00089E37 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		01162F75292A9F5800A5FFD5 /* RHSpeechUtteranceQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHSpeechUtteranceQuality.swift; sourceTree = "<group>"; };
+		01162F86292AA59400A5FFD5 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		01162F89292AA6C100A5FFD5 /* LanguageSettingsHostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSettingsHostModel.swift; sourceTree = "<group>"; };
+		01162F8A292AA6C100A5FFD5 /* LanguageSettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSettingsViewModel.swift; sourceTree = "<group>"; };
+		01162F8B292AA6C100A5FFD5 /* LanguageSettingsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSettingsContentView.swift; sourceTree = "<group>"; };
+		01162F8D292AA6C100A5FFD5 /* SettingsHostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHostModel.swift; sourceTree = "<group>"; };
+		01162F8E292AA6C100A5FFD5 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		01162F8F292AA6C100A5FFD5 /* SettingsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContentView.swift; sourceTree = "<group>"; };
+		013EAB5728D8B02D00196090 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		014321172A002792009B5FD9 /* RHSpeechUtteranceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHSpeechUtteranceTests.swift; sourceTree = "<group>"; };
+		01447AF529F7050A0067985E /* RHVoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHVoiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01447AF729F7050A0067985E /* RHVoiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVoiceUITests.swift; sourceTree = "<group>"; };
+		01447B0329F705540067985E /* LanguagesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesScreen.swift; sourceTree = "<group>"; };
+		01447B0529F7055E0067985E /* VoicesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicesScreen.swift; sourceTree = "<group>"; };
+		01447B0729F705660067985E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		01447B0929F705740067985E /* LanguageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettings.swift; sourceTree = "<group>"; };
+		01447B0B29F7058B0067985E /* ScreenBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBase.swift; sourceTree = "<group>"; };
+		01447B0E29F705D40067985E /* BaseTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		01447B1C29F710FD0067985E /* XCUIElementQueryIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElementQueryIterator.swift; sourceTree = "<group>"; };
+		01447B1E29F721B00067985E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		01447B2329F72A030067985E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		01572D372A7EB0A800B574E7 /* ky */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ky; path = ky.lproj/Localizable.strings; sourceTree = "<group>"; };
+		015C0A27296742710005566E /* Licenses.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Licenses.xcassets; sourceTree = "<group>"; };
+		015C0A2A29674A130005566E /* LicensesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesContentView.swift; sourceTree = "<group>"; };
+		015C0A2C29674A1F0005566E /* LicensesHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesHostModel.swift; sourceTree = "<group>"; };
+		015C0A2E29674A290005566E /* LicensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesViewModel.swift; sourceTree = "<group>"; };
+		015D87C129D219BD00DCCAA1 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		015E747D28D1CF5E00CE131D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		015E747F28D1CF7400CE131D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		015E748B28D1D64D00CE131D /* APIConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnector.swift; sourceTree = "<group>"; };
+		015E749228D1D70000CE131D /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
+		015E749328D1D70000CE131D /* RunSwiftLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = RunSwiftLint.sh; sourceTree = "<group>"; };
+		01600E6C2A1676D900FABC59 /* mobsf.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = mobsf.yml; sourceTree = "<group>"; };
+		01600E6D2A1676D900FABC59 /* RunMobsfscan.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = RunMobsfscan.sh; sourceTree = "<group>"; };
+		0171DAB028CFA0B3004BC275 /* RHVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0171DAB328CFA0B3004BC275 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		0171DAC728CFA0B3004BC275 /* MainHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHostModel.swift; sourceTree = "<group>"; };
+		0171DAC928CFA0B3004BC275 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		0171DACB28CFA0B3004BC275 /* RHVoiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVoiceApp.swift; sourceTree = "<group>"; };
+		0171DAD228CFA0B5004BC275 /* RHVoiceRegular.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RHVoiceRegular.entitlements; sourceTree = "<group>"; };
+		0171DAD728CFA0B5004BC275 /* RHVoiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RHVoiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0171DAE928CFA0B5004BC275 /* RHVoiceExtensionAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVoiceExtensionAudioUnit.swift; sourceTree = "<group>"; };
+		0171DAEF28CFA0B5004BC275 /* AudioUnitFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitFactory.swift; sourceTree = "<group>"; };
+		0171DAF128CFA0B5004BC275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01735D75298AE97C00767A1A /* RHVoice */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RHVoice; path = Core; sourceTree = "<group>"; };
+		01744A57293E5854005530F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		01744AAE293FA0E8005530F7 /* sq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sq; path = sq.lproj/Localizable.strings; sourceTree = "<group>"; };
+		01744AAF293FA123005530F7 /* mk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = mk; path = mk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		01756C642921402C00BB8CCE /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		01763FF22A00187100BE914F /* ResourseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourseInfo.swift; sourceTree = "<group>"; };
+		01763FF52A001D8300BE914F /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		0178F07E2A0394A000941356 /* RHSpeechSynthesizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHSpeechSynthesizerTests.swift; sourceTree = "<group>"; };
+		0178F0812A0396A800941356 /* FileManager+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Utils.swift"; sourceTree = "<group>"; };
+		0179C46629F59F86009B957E /* BackgroundTasksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTasksManager.swift; sourceTree = "<group>"; };
+		017C71832937EC6700F71ABF /* CShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CShort.swift; sourceTree = "<group>"; };
+		017C71892937ECAD00F71ABF /* RHSpeechSynthesisMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHSpeechSynthesisMarker.swift; sourceTree = "<group>"; };
+		017F3D9D29F44B15008B439D /* Array+SynthesisVoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+SynthesisVoice.swift"; sourceTree = "<group>"; };
+		017F3D9E29F44B15008B439D /* RHSpeechSynthesisVoiceGender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSpeechSynthesisVoiceGender.swift; sourceTree = "<group>"; };
+		017F3D9F29F44B15008B439D /* RHSpeechSynthesisProviderVoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSpeechSynthesisProviderVoice.swift; sourceTree = "<group>"; };
+		018063A629D0724C00813758 /* combine.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = combine.xcconfig; sourceTree = "<group>"; };
+		018063A929D0790E00813758 /* SettingsItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsItems.swift; sourceTree = "<group>"; };
+		018063AA29D0790E00813758 /* LanguageSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSettings.swift; sourceTree = "<group>"; };
+		018063AB29D0790E00813758 /* SettingsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		018063AC29D0790E00813758 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		018063AD29D0790E00813758 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		018063AF29D0790E00813758 /* RHSpeechUtterance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSpeechUtterance.swift; sourceTree = "<group>"; };
+		01959A6A296438250085D9FB /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		019AAB1329CF40A400B3E4A2 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
+		019AAB1429CF40A400B3E4A2 /* GenerateConstants.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateConstants.sh; sourceTree = "<group>"; };
+		019D8F3A291FE95D00124CD0 /* libcurl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurl.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/usr/lib/libcurl.tbd; sourceTree = DEVELOPER_DIR; };
+		01B4DC6A29D0A4AF0090F1AB /* version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = version.xcconfig; sourceTree = "<group>"; };
+		01B75C9E294366BE009060FD /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		01B9947C2A1A107300731222 /* VoiceHostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceHostModel.swift; sourceTree = "<group>"; };
+		01B9947D2A1A107300731222 /* VoiceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceViewModel.swift; sourceTree = "<group>"; };
+		01B994822A1A13E300731222 /* VoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceView.swift; sourceTree = "<group>"; };
+		01B994942A1A796300731222 /* TimeInterval+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Constants.swift"; sourceTree = "<group>"; };
+		01BC146A2AD9A684003E6E99 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		01BC146D2AD9A936003E6E99 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		01BD993A2A0AD41100B7F396 /* RunInfer.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = RunInfer.sh; sourceTree = "<group>"; };
+		01BE6E9328D4717100DD9050 /* RHVoiceApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RHVoiceApp-Info.plist"; sourceTree = "<group>"; };
+		01C43F5F29D03CE700FD16F0 /* extension_regular.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = extension_regular.xcconfig; sourceTree = "<group>"; };
+		01C43F6029D03CE700FD16F0 /* app_regular.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = app_regular.xcconfig; sourceTree = "<group>"; };
+		01C43F6129D03CE700FD16F0 /* common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = common.xcconfig; sourceTree = "<group>"; };
+		01C43F6229D03CE700FD16F0 /* iOSExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOSExportOptions.plist; sourceTree = "<group>"; };
+		01C43F6329D03CE700FD16F0 /* macOSExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOSExportOptions.plist; sourceTree = "<group>"; };
+		01C43F6429D03D1700FD16F0 /* config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
+		01DF1DB6298AF82300DAA100 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "../../../../../../../../Library/Developer/Xcode/DerivedData/RHVoice-dvqxbpijhtmuptaquzuqmhxqicdk/Build/Products/Debug-iphoneos/libcurl.a"; sourceTree = "<group>"; };
+		01E915542AD87A640051FF87 /* AVSpeechSynthesisProviderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSpeechSynthesisProviderRequest.swift; sourceTree = "<group>"; };
+		01E915582AD87AB60051FF87 /* AVSpeechSynthesisProviderRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSpeechSynthesisProviderRequestTests.swift; sourceTree = "<group>"; };
+		01E9F97F296AC51800EA4DE7 /* RHVoiceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHVoiceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01E9F988296AD0E100EA4DE7 /* SerialTasksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialTasksTests.swift; sourceTree = "<group>"; };
+		01E9F98A296AD8C000EA4DE7 /* VersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionTests.swift; sourceTree = "<group>"; };
+		01E9F98C296ADB8900EA4DE7 /* VoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceTests.swift; sourceTree = "<group>"; };
+		01F12D522A0672B300F63F93 /* CShortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CShortTests.swift; sourceTree = "<group>"; };
+		01F2E76B29FED69500AC7B28 /* RHVoiceApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = RHVoiceApp.xctestplan; sourceTree = "<group>"; };
+		01F2E76D29FED81F00AC7B28 /* RHVoiceAppUI.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RHVoiceAppUI.xctestplan; sourceTree = "<group>"; };
+		01F2E77229FEFFB300AC7B28 /* APIConnectorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnectorMock.swift; sourceTree = "<group>"; };
+		01F2E77D29FF0A5D00AC7B28 /* RHVoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RHVoice.json; sourceTree = "<group>"; };
+		01F2E78329FF0C4D00AC7B28 /* AppManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManagerMock.swift; sourceTree = "<group>"; };
+		01F2E78629FF13C000AC7B28 /* RHVersionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVersionInfo.swift; sourceTree = "<group>"; };
+		01F73CB1290FBFC300CD0ADA /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		01F837A728D72C2500945210 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		01F837AD28D740B200945210 /* SerialTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialTasks.swift; sourceTree = "<group>"; };
+		01FD2AE42A0B6DB000D3F537 /* inferconfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = inferconfig.json; sourceTree = "<group>"; };
+		01FD2AE52A0B756900D3F537 /* RunSwiftLintCI.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = RunSwiftLintCI.sh; sourceTree = "<group>"; };
+		01FD2AE92A0B890100D3F537 /* RunClang.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunClang.sh; sourceTree = "<group>"; };
+		69121C682CEC627900B51E4A /* RHVoiceExtensionAudioUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVoiceExtensionAudioUnitTests.swift; sourceTree = "<group>"; };
+		6921F36B2EA485810001CE23 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6921F36D2EA485940001CE23 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6921F38C2EA492350001CE23 /* URL+Open.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Open.swift"; sourceTree = "<group>"; };
+		6921F3912EA494510001CE23 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		6927540D2E104BBE0071878E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		6927540E2E104BBE0071878E /* MessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHandler.swift; sourceTree = "<group>"; };
+		6927540F2E104BBE0071878E /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
+		6927541E2E104C8E0071878E /* GetVoicesMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVoicesMessage.swift; sourceTree = "<group>"; };
+		692754252E104F7C0071878E /* RHVoiceMessageChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVoiceMessageChannel.swift; sourceTree = "<group>"; };
+		6927542A2E1050BA0071878E /* MessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
+		692754362E10ED720071878E /* SetVoicesMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVoicesMessage.swift; sourceTree = "<group>"; };
+		6927543C2E10F57C0071878E /* RHFileBacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHFileBacked.swift; sourceTree = "<group>"; };
+		6933581A2DBE0F180073C35B /* RHVoiceExtensionRegularMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RHVoiceExtensionRegularMacOS.entitlements; sourceTree = "<group>"; };
+		69375B0A2DA77F42009D8B56 /* RHVoiceRegularMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RHVoiceRegularMacOS.entitlements; sourceTree = "<group>"; };
+		69420D4A2D8FD15300327E8B /* LanguageSwitchingProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSwitchingProfile.swift; sourceTree = "<group>"; };
+		69420D4E2D90F4FE00327E8B /* VoiceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSettings.swift; sourceTree = "<group>"; };
+		69420D522D90FAA900327E8B /* SettingsStore+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsStore+Additions.swift"; sourceTree = "<group>"; };
+		694CEDF92DF4F1AD002EDCFC /* BaseHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHostModel.swift; sourceTree = "<group>"; };
+		694CEDFB2DF50B33002EDCFC /* GeneratedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedConstants.swift; sourceTree = "<group>"; };
+		694CEDFD2DF50BA7002EDCFC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		695E75112EA5E01700754584 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		695E75132EA5E04000754584 /* lb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lb; path = lb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		695E75162EA5E07C00754584 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		695E75192EA5E0C500754584 /* hy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hy; path = hy.lproj/Localizable.strings; sourceTree = "<group>"; };
+		697FF8D72E04DD71006992A0 /* RHVoiceManager+Synthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RHVoiceManager+Synthesizer.swift"; sourceTree = "<group>"; };
+		698035472DBECAF1006BAAC7 /* BuildApp.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildApp.sh; sourceTree = "<group>"; };
+		6985213A2DB4B29800DA8E43 /* RHVoiceManager+RHVoiceLoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RHVoiceManager+RHVoiceLoggerProtocol.swift"; sourceTree = "<group>"; };
+		6990A2852DF3F72F007AA700 /* RHVoiceManager+AVVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RHVoiceManager+AVVoice.swift"; sourceTree = "<group>"; };
+		6990A2872DF40577007AA700 /* RHVoiceAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVoiceAudioUnit.swift; sourceTree = "<group>"; };
+		69CF22282DBE9C9200627422 /* RHVoiceApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVoiceApplicationDelegate.swift; sourceTree = "<group>"; };
+		69E588CD2EF26DB200199296 /* cacert.pem */ = {isa = PBXFileReference; lastKnownFileType = text; name = cacert.pem; path = "Core/Core/src/android/RHVoice-core/src/main/res/raw/cacert.pem"; sourceTree = SOURCE_ROOT; };
+		69EC99A22CEEF486006132C7 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		69EC99A32CEEF497006132C7 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
+		69EC99A42CEEF719006132C7 /* app_regular_debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = app_regular_debug.xcconfig; sourceTree = "<group>"; };
+		69EC99A52CEEF719006132C7 /* app_regular_release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = app_regular_release.xcconfig; sourceTree = "<group>"; };
+		69EC99A62CEEF719006132C7 /* extension_regular_debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = extension_regular_debug.xcconfig; sourceTree = "<group>"; };
+		69EC99A72CEEF719006132C7 /* extension_regular_release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = extension_regular_release.xcconfig; sourceTree = "<group>"; };
+		69F5E8A12E75295400C85733 /* IsSynthesizingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSynthesizingMessage.swift; sourceTree = "<group>"; };
+		69FEA4AA2D21E17100C34F16 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		69FEA4AE2D21F9BD00C34F16 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		69FEA4B22D21FA1700C34F16 /* Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
+		69FEA4B62D21FA4600C34F16 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		69FEA4BA2D21FACF00C34F16 /* RHVoiceApiBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVoiceApiBridge.swift; sourceTree = "<group>"; };
+		69FEA4C22D220A3E00C34F16 /* RHVoiceBridgeParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHVoiceBridgeParams.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01447AF229F7050A0067985E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				01447B1929F707C00067985E /* RHVoice in Frameworks */,
+			);
+		};
+		0171DAAD28CFA0B3004BC275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				018063CC29D079AD00813758 /* RHVoice in Frameworks */,
+				01F837A828D72C2600945210 /* AVFoundation.framework in Frameworks */,
+				019D8F3C291FE98C00124CD0 /* libcurl.tbd in Frameworks */,
+				69D749072E1F8A7000417A4D /* ZIPFoundation in Frameworks */,
+			);
+		};
+		0171DAD428CFA0B5004BC275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				018063CE29D079B600813758 /* RHVoice in Frameworks */,
+				019D8F3B291FE96D00124CD0 /* libcurl.tbd in Frameworks */,
+				015E747E28D1CF6700CE131D /* libc++.tbd in Frameworks */,
+				015E748028D1CF7900CE131D /* libz.tbd in Frameworks */,
+				01756C652921402C00BB8CCE /* CoreAudio.framework in Frameworks */,
+			);
+		};
+		01E9F97C296AC51800EA4DE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				01447B1729F707A70067985E /* RHVoice in Frameworks */,
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01084C2B28D2598900D0148A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01084C2E28D259CD00D0148A /* Language+Additions.swift */,
+				01084C3028D259E800D0148A /* Voice+Additions.swift */,
+				01084C3228D25AB400D0148A /* Version+Additions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01084C3428D2609000D0148A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				01084C3528D260A700D0148A /* RHVoiceManager.swift */,
+				697FF8D72E04DD71006992A0 /* RHVoiceManager+Synthesizer.swift */,
+				6990A2872DF40577007AA700 /* RHVoiceAudioUnit.swift */,
+				6990A2852DF3F72F007AA700 /* RHVoiceManager+AVVoice.swift */,
+				011540F4294F656D00089E37 /* StorageManager.swift */,
+				01959A6A296438250085D9FB /* ReachabilityManager.swift */,
+				0179C46629F59F86009B957E /* BackgroundTasksManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		01084C3B28D2680600D0148A /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				01084C3C28D2687900D0148A /* LanguageContentView.swift */,
+				01084C3D28D2687900D0148A /* LanguageHostModel.swift */,
+				01084C3E28D2687900D0148A /* LanguageViewModel.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		01162F88292AA6C100A5FFD5 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				01162F8B292AA6C100A5FFD5 /* LanguageSettingsContentView.swift */,
+				01162F89292AA6C100A5FFD5 /* LanguageSettingsHostModel.swift */,
+				01162F8A292AA6C100A5FFD5 /* LanguageSettingsViewModel.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		01162F8C292AA6C100A5FFD5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				01162F8F292AA6C100A5FFD5 /* SettingsContentView.swift */,
+				01162F8D292AA6C100A5FFD5 /* SettingsHostModel.swift */,
+				01162F8E292AA6C100A5FFD5 /* SettingsViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		01217FE2293FD33E0014D42E /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				01744A58293E5854005530F7 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		013EAB5628D8AFED00196090 /* Documnetation */ = {
+			isa = PBXGroup;
+			children = (
+				013EAB5728D8B02D00196090 /* README.md */,
+			);
+			name = Documnetation;
+			sourceTree = "<group>";
+		};
+		01447AF629F7050A0067985E /* RHVoiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01447B0D29F705BE0067985E /* Additions */,
+				01447B0229F7053C0067985E /* Screens */,
+				01447AF729F7050A0067985E /* RHVoiceUITests.swift */,
+				01447B2329F72A030067985E /* SnapshotHelper.swift */,
+			);
+			path = RHVoiceUITests;
+			sourceTree = "<group>";
+		};
+		01447B0229F7053C0067985E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				01447B0B29F7058B0067985E /* ScreenBase.swift */,
+				01447B0329F705540067985E /* LanguagesScreen.swift */,
+				01447B0529F7055E0067985E /* VoicesScreen.swift */,
+				01447B0729F705660067985E /* SettingsScreen.swift */,
+				01447B0929F705740067985E /* LanguageSettings.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		01447B0D29F705BE0067985E /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				01447B0E29F705D40067985E /* BaseTestCase.swift */,
+				01447B1C29F710FD0067985E /* XCUIElementQueryIterator.swift */,
+				01447B1E29F721B00067985E /* String.swift */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		015C0A29296749DA0005566E /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				015C0A2A29674A130005566E /* LicensesContentView.swift */,
+				015C0A2C29674A1F0005566E /* LicensesHostModel.swift */,
+				015C0A2E29674A290005566E /* LicensesViewModel.swift */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		015E748628D1D5C700CE131D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				019AAB1529CF483100B3E4A2 /* Generated */,
+				01F73CAE290FBED000CD0ADA /* Extensions */,
+				01F837AC28D740AA00945210 /* Utils */,
+				01084C3428D2609000D0148A /* Managers */,
+				015E748A28D1D63D00CE131D /* API */,
+				015E748728D1D5DC00CE131D /* Application */,
+				015E748828D1D60000CE131D /* Flows */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		015E748728D1D5DC00CE131D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0171DACB28CFA0B3004BC275 /* RHVoiceApp.swift */,
+				69CF22282DBE9C9200627422 /* RHVoiceApplicationDelegate.swift */,
+				01084C3728D260DA00D0148A /* AppManager.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		015E748828D1D60000CE131D /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				015E748928D1D60B00CE131D /* Main */,
+				01084C3B28D2680600D0148A /* Language */,
+				01B9947B2A1A107300731222 /* Voice */,
+				019C8BC3292A4B460056F246 /* Settings */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		015E748928D1D60B00CE131D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0171DAB328CFA0B3004BC275 /* MainContentView.swift */,
+				0171DAC728CFA0B3004BC275 /* MainHostModel.swift */,
+				0171DAC928CFA0B3004BC275 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		015E748A28D1D63D00CE131D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				01084C2B28D2598900D0148A /* Models */,
+				015E748B28D1D64D00CE131D /* APIConnector.swift */,
+				01084C3928D260FA00D0148A /* APIConnectorInterface.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		015E748E28D1D69100CE131D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01217FE2293FD33E0014D42E /* Localization */,
+				01BE6E9328D4717100DD9050 /* RHVoiceApp-Info.plist */,
+				0104E46729D06DA200E8F772 /* Assets.xcassets */,
+				69E588CD2EF26DB200199296 /* cacert.pem */,
+				0171DAD228CFA0B5004BC275 /* RHVoiceRegular.entitlements */,
+				69375B0A2DA77F42009D8B56 /* RHVoiceRegularMacOS.entitlements */,
+				6933581A2DBE0F180073C35B /* RHVoiceExtensionRegularMacOS.entitlements */,
+				015C0A27296742710005566E /* Licenses.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		015E748F28D1D6CA00CE131D /* BuildScripts */ = {
+			isa = PBXGroup;
+			children = (
+				698035472DBECAF1006BAAC7 /* BuildApp.sh */,
+				01F2E76B29FED69500AC7B28 /* RHVoiceApp.xctestplan */,
+				01F2E76D29FED81F00AC7B28 /* RHVoiceAppUI.xctestplan */,
+				019AAB1229CF40A400B3E4A2 /* GenerateFiles */,
+				0181969629210A910079272D /* Configs */,
+				015E749028D1D6D400CE131D /* Linting */,
+			);
+			path = BuildScripts;
+			sourceTree = "<group>";
+		};
+		015E749028D1D6D400CE131D /* Linting */ = {
+			isa = PBXGroup;
+			children = (
+				01600E6B2A16767D00FABC59 /* mobsfscan */,
+				01FD2AE82A0B890100D3F537 /* Clang */,
+				01BD99392A0AD41100B7F396 /* Infer */,
+				015E749128D1D6EB00CE131D /* SwiftLint */,
+			);
+			path = Linting;
+			sourceTree = "<group>";
+		};
+		015E749128D1D6EB00CE131D /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				01FD2AE52A0B756900D3F537 /* RunSwiftLintCI.sh */,
+				015E749328D1D70000CE131D /* RunSwiftLint.sh */,
+				015E749228D1D70000CE131D /* swiftlint.yml */,
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		01600E6B2A16767D00FABC59 /* mobsfscan */ = {
+			isa = PBXGroup;
+			children = (
+				01600E6C2A1676D900FABC59 /* mobsf.yml */,
+				01600E6D2A1676D900FABC59 /* RunMobsfscan.sh */,
+			);
+			path = mobsfscan;
+			sourceTree = "<group>";
+		};
+		0171DAA728CFA0B3004BC275 = {
+			isa = PBXGroup;
+			children = (
+				018063A729D0790E00813758 /* Common */,
+				01C7D65629217D4C00A0E9CE /* Packages */,
+				013EAB5628D8AFED00196090 /* Documnetation */,
+				0171DAB228CFA0B3004BC275 /* RHVoice */,
+				0171DADB28CFA0B5004BC275 /* RHVoiceExtension */,
+				01E9F980296AC51800EA4DE7 /* RHVoiceAppTests */,
+				01447AF629F7050A0067985E /* RHVoiceUITests */,
+				0171DAB128CFA0B3004BC275 /* Products */,
+				01BBBE6E28D06F7900BB423B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0171DAB128CFA0B3004BC275 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0171DAB028CFA0B3004BC275 /* RHVoice.app */,
+				0171DAD728CFA0B5004BC275 /* RHVoiceExtension.appex */,
+				01E9F97F296AC51800EA4DE7 /* RHVoiceAppTests.xctest */,
+				01447AF529F7050A0067985E /* RHVoiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0171DAB228CFA0B3004BC275 /* RHVoice */ = {
+			isa = PBXGroup;
+			children = (
+				015E748F28D1D6CA00CE131D /* BuildScripts */,
+				015E748628D1D5C700CE131D /* Sources */,
+				015E748E28D1D69100CE131D /* Resources */,
+			);
+			path = RHVoice;
+			sourceTree = "<group>";
+		};
+		0171DADB28CFA0B5004BC275 /* RHVoiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0171DAF128CFA0B5004BC275 /* Info.plist */,
+				017C71822937EC5200F71ABF /* Utils */,
+				0171DAE828CFA0B5004BC275 /* AudioUnit */,
+				0171DAEE28CFA0B5004BC275 /* AudioUnitFactory */,
+				01BC146A2AD9A684003E6E99 /* Localizable.xcstrings */,
+			);
+			path = RHVoiceExtension;
+			sourceTree = "<group>";
+		};
+		0171DAE828CFA0B5004BC275 /* AudioUnit */ = {
+			isa = PBXGroup;
+			children = (
+				0171DAE928CFA0B5004BC275 /* RHVoiceExtensionAudioUnit.swift */,
+				692754252E104F7C0071878E /* RHVoiceMessageChannel.swift */,
+			);
+			path = AudioUnit;
+			sourceTree = "<group>";
+		};
+		0171DAEE28CFA0B5004BC275 /* AudioUnitFactory */ = {
+			isa = PBXGroup;
+			children = (
+				0171DAEF28CFA0B5004BC275 /* AudioUnitFactory.swift */,
+			);
+			path = AudioUnitFactory;
+			sourceTree = "<group>";
+		};
+		01763FF12A00182300BE914F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				01763FF22A00187100BE914F /* ResourseInfo.swift */,
+				01763FF52A001D8300BE914F /* XCTestCase.swift */,
+				0178F0812A0396A800941356 /* FileManager+Utils.swift */,
+				010F3DDC2A03BBD100F36F3A /* RHSpeechSynthesizerTestData.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		017C71822937EC5200F71ABF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				017C71832937EC6700F71ABF /* CShort.swift */,
+				017C71892937ECAD00F71ABF /* RHSpeechSynthesisMarker.swift */,
+				01BC146D2AD9A936003E6E99 /* String.swift */,
+				01E915542AD87A640051FF87 /* AVSpeechSynthesisProviderRequest.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		018063A729D0790E00813758 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				69FEA4AC2D21F94100C34F16 /* API */,
+				018063A829D0790E00813758 /* Settings */,
+				018063AE29D0790E00813758 /* Utils */,
+				018063AC29D0790E00813758 /* Logger.swift */,
+				018063AD29D0790E00813758 /* FileManager.swift */,
+				694CEDFD2DF50BA7002EDCFC /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		018063A829D0790E00813758 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				018063A929D0790E00813758 /* SettingsItems.swift */,
+				018063AA29D0790E00813758 /* LanguageSettings.swift */,
+				69420D4E2D90F4FE00327E8B /* VoiceSettings.swift */,
+				018063AB29D0790E00813758 /* SettingsStore.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		018063AE29D0790E00813758 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6927543C2E10F57C0071878E /* RHFileBacked.swift */,
+				018063AF29D0790E00813758 /* RHSpeechUtterance.swift */,
+				69FEA4C22D220A3E00C34F16 /* RHVoiceBridgeParams.swift */,
+				017F3D9F29F44B15008B439D /* RHSpeechSynthesisProviderVoice.swift */,
+				017F3D9D29F44B15008B439D /* Array+SynthesisVoice.swift */,
+				017F3D9E29F44B15008B439D /* RHSpeechSynthesisVoiceGender.swift */,
+				01B994942A1A796300731222 /* TimeInterval+Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0181969629210A910079272D /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				01C43F6429D03D1700FD16F0 /* config.xcconfig */,
+				69EC99A22CEEF486006132C7 /* debug.xcconfig */,
+				69EC99A32CEEF497006132C7 /* release.xcconfig */,
+				018063A629D0724C00813758 /* combine.xcconfig */,
+				01C43F5E29D03CE700FD16F0 /* Regular */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		019AAB1229CF40A400B3E4A2 /* GenerateFiles */ = {
+			isa = PBXGroup;
+			children = (
+				019AAB1329CF40A400B3E4A2 /* ConstantsTemplate.swift */,
+				019AAB1429CF40A400B3E4A2 /* GenerateConstants.sh */,
+			);
+			path = GenerateFiles;
+			sourceTree = "<group>";
+		};
+		019AAB1529CF483100B3E4A2 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				694CEDFB2DF50B33002EDCFC /* GeneratedConstants.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		019C8BC3292A4B460056F246 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				015C0A29296749DA0005566E /* Licenses */,
+				01162F88292AA6C100A5FFD5 /* Language */,
+				01162F8C292AA6C100A5FFD5 /* Main */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		01B9947B2A1A107300731222 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				01B994822A1A13E300731222 /* VoiceView.swift */,
+				01B9947C2A1A107300731222 /* VoiceHostModel.swift */,
+				01B9947D2A1A107300731222 /* VoiceViewModel.swift */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		01BBBE6E28D06F7900BB423B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01DF1DB6298AF82300DAA100 /* libcurl.a */,
+				01756C642921402C00BB8CCE /* CoreAudio.framework */,
+				019D8F3A291FE95D00124CD0 /* libcurl.tbd */,
+				01F837A728D72C2500945210 /* AVFoundation.framework */,
+				015E747F28D1CF7400CE131D /* libz.tbd */,
+				015E747D28D1CF5E00CE131D /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01BD99392A0AD41100B7F396 /* Infer */ = {
+			isa = PBXGroup;
+			children = (
+				01BD993A2A0AD41100B7F396 /* RunInfer.sh */,
+				01FD2AE42A0B6DB000D3F537 /* inferconfig.json */,
+			);
+			path = Infer;
+			sourceTree = "<group>";
+		};
+		01C43F5E29D03CE700FD16F0 /* Regular */ = {
+			isa = PBXGroup;
+			children = (
+				69EC99A42CEEF719006132C7 /* app_regular_debug.xcconfig */,
+				69EC99A52CEEF719006132C7 /* app_regular_release.xcconfig */,
+				69EC99A62CEEF719006132C7 /* extension_regular_debug.xcconfig */,
+				69EC99A72CEEF719006132C7 /* extension_regular_release.xcconfig */,
+				01C43F5F29D03CE700FD16F0 /* extension_regular.xcconfig */,
+				01C43F6029D03CE700FD16F0 /* app_regular.xcconfig */,
+				01C43F6129D03CE700FD16F0 /* common.xcconfig */,
+				01B4DC6A29D0A4AF0090F1AB /* version.xcconfig */,
+				01C43F6229D03CE700FD16F0 /* iOSExportOptions.plist */,
+				01C43F6329D03CE700FD16F0 /* macOSExportOptions.plist */,
+			);
+			path = Regular;
+			sourceTree = "<group>";
+		};
+		01C7D65629217D4C00A0E9CE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				01735D75298AE97C00767A1A /* RHVoice */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		01E9F980296AC51800EA4DE7 /* RHVoiceAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				01763FF12A00182300BE914F /* Utils */,
+				01F2E77129FEFE7100AC7B28 /* Mocks */,
+				01E9F988296AD0E100EA4DE7 /* SerialTasksTests.swift */,
+				01E9F98A296AD8C000EA4DE7 /* VersionTests.swift */,
+				01E9F98C296ADB8900EA4DE7 /* VoiceTests.swift */,
+				014321172A002792009B5FD9 /* RHSpeechUtteranceTests.swift */,
+				0178F07E2A0394A000941356 /* RHSpeechSynthesizerTests.swift */,
+				01F12D522A0672B300F63F93 /* CShortTests.swift */,
+				01E915582AD87AB60051FF87 /* AVSpeechSynthesisProviderRequestTests.swift */,
+				69121C682CEC627900B51E4A /* RHVoiceExtensionAudioUnitTests.swift */,
+			);
+			path = RHVoiceAppTests;
+			sourceTree = "<group>";
+		};
+		01F2E77129FEFE7100AC7B28 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				01F2E77229FEFFB300AC7B28 /* APIConnectorMock.swift */,
+				01F2E78329FF0C4D00AC7B28 /* AppManagerMock.swift */,
+				01F2E77D29FF0A5D00AC7B28 /* RHVoice.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		01F73CAE290FBED000CD0ADA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				698521392DB4B27D00DA8E43 /* RHVoiceManager */,
+				01162F86292AA59400A5FFD5 /* Bundle.swift */,
+				01F73CB1290FBFC300CD0ADA /* NSAttributedString.swift */,
+				01162F75292A9F5800A5FFD5 /* RHSpeechUtteranceQuality.swift */,
+				01F2E78629FF13C000AC7B28 /* RHVersionInfo.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		01F837AC28D740AA00945210 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				694CEDF92DF4F1AD002EDCFC /* BaseHostModel.swift */,
+				01F837AD28D740B200945210 /* SerialTasks.swift */,
+				01B75C9E294366BE009060FD /* String.swift */,
+				69420D522D90FAA900327E8B /* SettingsStore+Additions.swift */,
+				6921F38C2EA492350001CE23 /* URL+Open.swift */,
+				6921F3912EA494510001CE23 /* SafariView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		01FD2AE82A0B890100D3F537 /* Clang */ = {
+			isa = PBXGroup;
+			children = (
+				01FD2AE92A0B890100D3F537 /* RunClang.sh */,
+			);
+			path = Clang;
+			sourceTree = "<group>";
+		};
+		692754102E104BBE0071878E /* AudioUnit */ = {
+			isa = PBXGroup;
+			children = (
+				6927541B2E104C880071878E /* Messages */,
+				6927540D2E104BBE0071878E /* Message.swift */,
+				6927542A2E1050BA0071878E /* MessageResponse.swift */,
+				6927540E2E104BBE0071878E /* MessageHandler.swift */,
+				6927540F2E104BBE0071878E /* MessageType.swift */,
+			);
+			path = AudioUnit;
+			sourceTree = "<group>";
+		};
+		6927541B2E104C880071878E /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				692754362E10ED720071878E /* SetVoicesMessage.swift */,
+				6927541E2E104C8E0071878E /* GetVoicesMessage.swift */,
+				69F5E8A12E75295400C85733 /* IsSynthesizingMessage.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		698521392DB4B27D00DA8E43 /* RHVoiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				6985213A2DB4B29800DA8E43 /* RHVoiceManager+RHVoiceLoggerProtocol.swift */,
+			);
+			path = RHVoiceManager;
+			sourceTree = "<group>";
+		};
+		69FEA4AC2D21F94100C34F16 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				692754102E104BBE0071878E /* AudioUnit */,
+				69FEA4AD2D21F9AE00C34F16 /* Models */,
+				69FEA4BA2D21FACF00C34F16 /* RHVoiceApiBridge.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		69FEA4AD2D21F9AE00C34F16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01084C2C28D259B200D0148A /* PackageInfo.swift */,
+				69FEA4B22D21FA1700C34F16 /* Voice.swift */,
+				69FEA4B62D21FA4600C34F16 /* Version.swift */,
+				69FEA4AA2D21E17100C34F16 /* Product.swift */,
+				69FEA4AE2D21F9BD00C34F16 /* Language.swift */,
+				69420D4A2D8FD15300327E8B /* LanguageSwitchingProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01447AF429F7050A0067985E /* RHVoiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01447B0129F7050B0067985E /* Build configuration list for PBXNativeTarget "RHVoiceUITests" */;
+			buildPhases = (
+				01447AF129F7050A0067985E /* Sources */,
+				01447AF229F7050A0067985E /* Frameworks */,
+				01447AF329F7050A0067985E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01447AFC29F7050A0067985E /* PBXTargetDependency */,
+			);
+			name = RHVoiceUITests;
+			packageProductDependencies = (
+				01447B1829F707C00067985E /* RHVoice */,
+			);
+			productName = RHVoiceUITests;
+			productReference = 01447AF529F7050A0067985E /* RHVoiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0171DAAF28CFA0B3004BC275 /* RHVoiceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0171DAF828CFA0B5004BC275 /* Build configuration list for PBXNativeTarget "RHVoiceApp" */;
+			buildPhases = (
+				015E749428D1D71500CE131D /* Run SwiftLint Autocorrector */,
+				0171DAAC28CFA0B3004BC275 /* Sources */,
+				015E749528D1D74100CE131D /* Run SwiftLint Analizer */,
+				0171DAAD28CFA0B3004BC275 /* Frameworks */,
+				0171DAAE28CFA0B3004BC275 /* Resources */,
+				691364752E696A3400BDA382 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69D7490A2E1F8A9200417A4D /* PBXTargetDependency */,
+				692754022E0FC24A0071878E /* PBXTargetDependency */,
+				691364742E696A3400BDA382 /* PBXTargetDependency */,
+				691364792E696A3C00BDA382 /* PBXTargetDependency */,
+				69F5E8C52E75302100C85733 /* PBXTargetDependency */,
+			);
+			name = RHVoiceApp;
+			packageProductDependencies = (
+				018063CB29D079AD00813758 /* RHVoice */,
+				69D749062E1F8A7000417A4D /* ZIPFoundation */,
+			);
+			productName = RHVoice;
+			productReference = 0171DAB028CFA0B3004BC275 /* RHVoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0171DAD628CFA0B5004BC275 /* RHVoiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0171DAF428CFA0B5004BC275 /* Build configuration list for PBXNativeTarget "RHVoiceExtension" */;
+			buildPhases = (
+				69FCA39F2EFC87EB00E9BEB1 /* Generate Constants */,
+				0171DAD328CFA0B5004BC275 /* Sources */,
+				0171DAD428CFA0B5004BC275 /* Frameworks */,
+				0171DAD528CFA0B5004BC275 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				017C717B293776B500F71ABF /* PBXTargetDependency */,
+			);
+			name = RHVoiceExtension;
+			packageProductDependencies = (
+				018063CD29D079B600813758 /* RHVoice */,
+			);
+			productName = RHVoiceExtension;
+			productReference = 0171DAD728CFA0B5004BC275 /* RHVoiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		01E9F97E296AC51800EA4DE7 /* RHVoiceAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01E9F987296AC51800EA4DE7 /* Build configuration list for PBXNativeTarget "RHVoiceAppTests" */;
+			buildPhases = (
+				01E9F97B296AC51800EA4DE7 /* Sources */,
+				01E9F97C296AC51800EA4DE7 /* Frameworks */,
+				0143211F2A00331E009B5FD9 /* Copy RHVoice.json */,
+				01E9F97D296AC51800EA4DE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01F2E77729FF023F00AC7B28 /* PBXTargetDependency */,
+				01E9F984296AC51800EA4DE7 /* PBXTargetDependency */,
+			);
+			name = RHVoiceAppTests;
+			packageProductDependencies = (
+				01447B1629F707A70067985E /* RHVoice */,
+			);
+			productName = RHVoiceAppTests;
+			productReference = 01E9F97F296AC51800EA4DE7 /* RHVoiceAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0171DAA828CFA0B3004BC275 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1540;
+				ORGANIZATIONNAME = "Copyright (C) 2025 Non-Routine LLC";
+				TargetAttributes = {
+					01447AF429F7050A0067985E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 0171DAAF28CFA0B3004BC275;
+					};
+					0171DAAF28CFA0B3004BC275 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					0171DAD628CFA0B5004BC275 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					01E9F97E296AC51800EA4DE7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0171DAAF28CFA0B3004BC275;
+					};
+				};
+			};
+			buildConfigurationList = 0171DAAB28CFA0B3004BC275 /* Build configuration list for PBXProject "RHVoice" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				sq,
+				mk,
+				"pt-BR",
+				ky,
+				fr,
+				de,
+				es,
+				lb,
+				ru,
+				hy,
+			);
+			mainGroup = 0171DAA728CFA0B3004BC275;
+			packageReferences = (
+				69D749052E1F8A7000417A4D /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			preferredProjectObjectVersion = 90;
+			productRefGroup = 0171DAB128CFA0B3004BC275 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0171DAAF28CFA0B3004BC275 /* RHVoiceApp */,
+				0171DAD628CFA0B5004BC275 /* RHVoiceExtension */,
+				01E9F97E296AC51800EA4DE7 /* RHVoiceAppTests */,
+				01447AF429F7050A0067985E /* RHVoiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01447AF329F7050A0067985E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		0171DAAE28CFA0B3004BC275 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				69E588CE2EF26DB200199296 /* cacert.pem in Resources */,
+				69A8CD772EF2752D00346E35 /* Localizable.strings in Resources */,
+				018063A529D06EBD00813758 /* Assets.xcassets in Resources */,
+				015C0A28296742710005566E /* Licenses.xcassets in Resources */,
+			);
+		};
+		0171DAD528CFA0B5004BC275 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				01BC146B2AD9A684003E6E99 /* Localizable.xcstrings in Resources */,
+			);
+		};
+		01E9F97D296AC51800EA4DE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				01BC14722AD9B05B003E6E99 /* Localizable.xcstrings in Resources */,
+				01F2E77E29FF0A5D00AC7B28 /* RHVoice.json in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0143211F2A00331E009B5FD9 /* Copy RHVoice.json */ = {
+			isa = PBXShellScriptBuildPhase;
+			inputPaths = (
+				"$(SRCROOT)/RHVoiceAppTests/Mocks/RHVoice.json",
+			);
+			name = "Copy RHVoice.json";
+			outputPaths = (
+				"$(CODESIGNING_FOLDER_PATH)/RHVoice-config.json",
+			);
+			shellPath = /bin/sh;
+			shellScript = (
+				"rm $SCRIPT_OUTPUT_FILE_0",
+				"cp $SCRIPT_INPUT_FILE_0 $SCRIPT_OUTPUT_FILE_0",
+				"",
+				"",
+				"",
+				"",
+			);
+		};
+		015E749428D1D71500CE131D /* Run SwiftLint Autocorrector */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			name = "Run SwiftLint Autocorrector";
+			shellPath = /bin/sh;
+			shellScript = (
+				"REPORT_TYPE=\"xcode\" $SRCROOT/$PROJECT/BuildScripts/Linting/SwiftLint/RunSwiftLint.sh --fix",
+				"",
+				"",
+				"",
+				"",
+			);
+		};
+		015E749528D1D74100CE131D /* Run SwiftLint Analizer */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			name = "Run SwiftLint Analizer";
+			shellPath = /bin/sh;
+			shellScript = (
+				"REPORT_TYPE=\"xcode\" $SRCROOT/$PROJECT/BuildScripts/Linting/SwiftLint/RunSwiftLint.sh",
+				"",
+				"",
+				"",
+				"",
+			);
+		};
+		69FCA39F2EFC87EB00E9BEB1 /* Generate Constants */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			inputPaths = (
+				"$(SRCROOT)/$(PROJECT)/BuildScripts/GenerateFiles/ConstantsTemplate.swift",
+			);
+			name = "Generate Constants";
+			outputPaths = (
+				"$(SRCROOT)/$(PROJECT)/Sources/Generated/GeneratedConstants.swift",
+			);
+			shellPath = /bin/sh;
+			shellScript = (
+				"$SRCROOT/$PROJECT/BuildScripts/GenerateFiles/GenerateConstants.sh",
+				"",
+				"",
+			);
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01447AF129F7050A0067985E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				01447B0A29F705740067985E /* LanguageSettings.swift in Sources */,
+				01447AF829F7050A0067985E /* RHVoiceUITests.swift in Sources */,
+				01447B0429F705540067985E /* LanguagesScreen.swift in Sources */,
+				01447B1F29F721B00067985E /* String.swift in Sources */,
+				01447B0629F7055E0067985E /* VoicesScreen.swift in Sources */,
+				01447B1029F705D40067985E /* BaseTestCase.swift in Sources */,
+				01447B0C29F7058B0067985E /* ScreenBase.swift in Sources */,
+				01447B0829F705660067985E /* SettingsScreen.swift in Sources */,
+				01447B1D29F710FD0067985E /* XCUIElementQueryIterator.swift in Sources */,
+				01447B2429F72A030067985E /* SnapshotHelper.swift in Sources */,
+			);
+		};
+		0171DAAC28CFA0B3004BC275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				01084C3628D260A700D0148A /* RHVoiceManager.swift in Sources */,
+				692754142E104BBE0071878E /* MessageHandler.swift in Sources */,
+				692754152E104BBE0071878E /* MessageType.swift in Sources */,
+				692754162E104BBE0071878E /* Message.swift in Sources */,
+				015E748C28D1D64D00CE131D /* APIConnector.swift in Sources */,
+				01084C3328D25AB400D0148A /* Version+Additions.swift in Sources */,
+				0171DAC828CFA0B3004BC275 /* MainHostModel.swift in Sources */,
+				6990A2882DF40577007AA700 /* RHVoiceAudioUnit.swift in Sources */,
+				018063BC29D0790E00813758 /* SettingsStore.swift in Sources */,
+				01162F95292AA6C100A5FFD5 /* SettingsContentView.swift in Sources */,
+				01162F76292A9F5800A5FFD5 /* RHSpeechUtteranceQuality.swift in Sources */,
+				69F5E8A52E75297500C85733 /* IsSynthesizingMessage.swift in Sources */,
+				6985213B2DB4B29C00DA8E43 /* RHVoiceManager+RHVoiceLoggerProtocol.swift in Sources */,
+				01084C2D28D259B200D0148A /* PackageInfo.swift in Sources */,
+				01084C2D28D259B200D0148A /* PackageInfo.swift in Sources */,
+				01084C2D28D259B200D0148A /* PackageInfo.swift in Sources */,
+				018063B829D0790E00813758 /* SettingsItems.swift in Sources */,
+				018063C029D0790E00813758 /* FileManager.swift in Sources */,
+				01F73CB2290FBFC300CD0ADA /* NSAttributedString.swift in Sources */,
+				69FEA4AF2D21F9BE00C34F16 /* Language.swift in Sources */,
+				6921F38E2EA4923B0001CE23 /* URL+Open.swift in Sources */,
+				017F3DA229F44B15008B439D /* RHSpeechSynthesisVoiceGender.swift in Sources */,
+				01084C2F28D259CD00D0148A /* Language+Additions.swift in Sources */,
+				69CF22292DBE9C9800627422 /* RHVoiceApplicationDelegate.swift in Sources */,
+				01084C2F28D259CD00D0148A /* Language+Additions.swift in Sources */,
+				69420D4F2D90F50200327E8B /* VoiceSettings.swift in Sources */,
+				69420D4C2D8FD15500327E8B /* LanguageSwitchingProfile.swift in Sources */,
+				692754392E10ED770071878E /* SetVoicesMessage.swift in Sources */,
+				69FEA4AB2D21E17700C34F16 /* Product.swift in Sources */,
+				018063BA29D0790E00813758 /* LanguageSettings.swift in Sources */,
+				01084C4128D2687900D0148A /* LanguageViewModel.swift in Sources */,
+				017F3DA029F44B15008B439D /* Array+SynthesisVoice.swift in Sources */,
+				018063C229D0790E00813758 /* RHSpeechUtterance.swift in Sources */,
+				01084C3128D259E800D0148A /* Voice+Additions.swift in Sources */,
+				01084C3828D260DA00D0148A /* AppManager.swift in Sources */,
+				01F837AE28D740B200945210 /* SerialTasks.swift in Sources */,
+				692754202E104C940071878E /* GetVoicesMessage.swift in Sources */,
+				69420D532D90FAAD00327E8B /* SettingsStore+Additions.swift in Sources */,
+				01084C3A28D260FA00D0148A /* APIConnectorInterface.swift in Sources */,
+				694CEDFA2DF4F1AD002EDCFC /* BaseHostModel.swift in Sources */,
+				6927543F2E10F5800071878E /* RHFileBacked.swift in Sources */,
+				6990A2862DF3F73D007AA700 /* RHVoiceManager+AVVoice.swift in Sources */,
+				01B75C9F294366BF009060FD /* String.swift in Sources */,
+				69FEA4C52D220A4000C34F16 /* RHVoiceBridgeParams.swift in Sources */,
+				01162F93292AA6C100A5FFD5 /* SettingsHostModel.swift in Sources */,
+				01959A6B296438250085D9FB /* ReachabilityManager.swift in Sources */,
+				694CEDFC2DF50B33002EDCFC /* GeneratedConstants.swift in Sources */,
+				01B994832A1A13E300731222 /* VoiceView.swift in Sources */,
+				01084C3F28D2687900D0148A /* LanguageContentView.swift in Sources */,
+				015C0A2B29674A130005566E /* LicensesContentView.swift in Sources */,
+				01162F90292AA6C100A5FFD5 /* LanguageSettingsHostModel.swift in Sources */,
+				017F3DA429F44B15008B439D /* RHSpeechSynthesisProviderVoice.swift in Sources */,
+				69FEA4BC2D21FAD700C34F16 /* RHVoiceApiBridge.swift in Sources */,
+				01B9947F2A1A107300731222 /* VoiceHostModel.swift in Sources */,
+				01162F92292AA6C100A5FFD5 /* LanguageSettingsContentView.swift in Sources */,
+				697FF8D82E04DD82006992A0 /* RHVoiceManager+Synthesizer.swift in Sources */,
+				015C0A2D29674A1F0005566E /* LicensesHostModel.swift in Sources */,
+				018063BE29D0790E00813758 /* Logger.swift in Sources */,
+				69FEA4B72D21FA4700C34F16 /* Version.swift in Sources */,
+				01084C4028D2687900D0148A /* LanguageHostModel.swift in Sources */,
+				0171DACA28CFA0B3004BC275 /* MainViewModel.swift in Sources */,
+				6927542B2E1050BA0071878E /* MessageResponse.swift in Sources */,
+				6921F3922EA494520001CE23 /* SafariView.swift in Sources */,
+				011540F5294F656D00089E37 /* StorageManager.swift in Sources */,
+				0171DACC28CFA0B3004BC275 /* RHVoiceApp.swift in Sources */,
+				69FEA4B32D21FA2C00C34F16 /* Voice.swift in Sources */,
+				694CEDFE2DF50BA7002EDCFC /* Constants.swift in Sources */,
+				01F2E78929FF146700AC7B28 /* RHVersionInfo.swift in Sources */,
+				015C0A2F29674A290005566E /* LicensesViewModel.swift in Sources */,
+				01B994802A1A107300731222 /* VoiceViewModel.swift in Sources */,
+				01162F87292AA59400A5FFD5 /* Bundle.swift in Sources */,
+				01B994952A1A796300731222 /* TimeInterval+Constants.swift in Sources */,
+				0179C46729F59F86009B957E /* BackgroundTasksManager.swift in Sources */,
+				0171DAB428CFA0B3004BC275 /* MainContentView.swift in Sources */,
+				01162F91292AA6C100A5FFD5 /* LanguageSettingsViewModel.swift in Sources */,
+				01162F94292AA6C100A5FFD5 /* SettingsViewModel.swift in Sources */,
+			);
+		};
+		0171DAD328CFA0B5004BC275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				018063C329D0790E00813758 /* RHSpeechUtterance.swift in Sources */,
+				01B994962A1A796300731222 /* TimeInterval+Constants.swift in Sources */,
+				017F3DA129F44B15008B439D /* Array+SynthesisVoice.swift in Sources */,
+				69FCA39E2EFC87B400E9BEB1 /* GeneratedConstants.swift in Sources */,
+				6927543E2E10F5800071878E /* RHFileBacked.swift in Sources */,
+				01E915552AD87A640051FF87 /* AVSpeechSynthesisProviderRequest.swift in Sources */,
+				0171DAEA28CFA0B5004BC275 /* RHVoiceExtensionAudioUnit.swift in Sources */,
+				692754212E104C940071878E /* GetVoicesMessage.swift in Sources */,
+				69FEA4BE2D21FBA100C34F16 /* PackageInfo.swift in Sources */,
+				017C718A2937ECAD00F71ABF /* RHSpeechSynthesisMarker.swift in Sources */,
+				0171DAF028CFA0B5004BC275 /* AudioUnitFactory.swift in Sources */,
+				01BC146E2AD9A936003E6E99 /* String.swift in Sources */,
+				017F3DA329F44B15008B439D /* RHSpeechSynthesisVoiceGender.swift in Sources */,
+				017F3DA529F44B15008B439D /* RHSpeechSynthesisProviderVoice.swift in Sources */,
+				69FEA4B42D21FA2C00C34F16 /* Voice.swift in Sources */,
+				017C71842937EC6700F71ABF /* CShort.swift in Sources */,
+				69121C5D2CEC626700B51E4A /* FileManager.swift in Sources */,
+				69420D512D90F50200327E8B /* VoiceSettings.swift in Sources */,
+				69FEA4BB2D21FAD700C34F16 /* RHVoiceApiBridge.swift in Sources */,
+				69121C5F2CEC626700B51E4A /* Logger.swift in Sources */,
+				6927543A2E10ED770071878E /* SetVoicesMessage.swift in Sources */,
+				69FEA4B92D21FA4700C34F16 /* Version.swift in Sources */,
+				69FEA4C32D220A4000C34F16 /* RHVoiceBridgeParams.swift in Sources */,
+				692754282E104F820071878E /* RHVoiceMessageChannel.swift in Sources */,
+				69121C612CEC626700B51E4A /* SettingsItems.swift in Sources */,
+				69F5E8A72E75297500C85733 /* IsSynthesizingMessage.swift in Sources */,
+				69121C622CEC626700B51E4A /* LanguageSettings.swift in Sources */,
+				694CEE002DF50BA7002EDCFC /* Constants.swift in Sources */,
+				69FEA4B02D21F9BE00C34F16 /* Language.swift in Sources */,
+				69FEA4C02D21FBB100C34F16 /* Product.swift in Sources */,
+				69121C642CEC626700B51E4A /* SettingsStore.swift in Sources */,
+				6927542C2E1050BA0071878E /* MessageResponse.swift in Sources */,
+				692754172E104BBE0071878E /* MessageHandler.swift in Sources */,
+				692754182E104BBE0071878E /* MessageType.swift in Sources */,
+				692754192E104BBE0071878E /* Message.swift in Sources */,
+				69420D4D2D8FD15500327E8B /* LanguageSwitchingProfile.swift in Sources */,
+			);
+		};
+		01E9F97B296AC51800EA4DE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				69FEA4C42D220A4000C34F16 /* RHVoiceBridgeParams.swift in Sources */,
+				69420D502D90F50200327E8B /* VoiceSettings.swift in Sources */,
+				692754112E104BBE0071878E /* MessageHandler.swift in Sources */,
+				6927542D2E1050BA0071878E /* MessageResponse.swift in Sources */,
+				692754122E104BBE0071878E /* MessageType.swift in Sources */,
+				692754132E104BBE0071878E /* Message.swift in Sources */,
+				01F12D532A0672B300F63F93 /* CShortTests.swift in Sources */,
+				0178F07F2A0394A000941356 /* RHSpeechSynthesizerTests.swift in Sources */,
+				01F12D542A06810900F63F93 /* CShort.swift in Sources */,
+				69121C7B2CEC632800B51E4A /* Array+SynthesisVoice.swift in Sources */,
+				69FEA4B52D21FA2C00C34F16 /* Voice.swift in Sources */,
+				69420D4B2D8FD15500327E8B /* LanguageSwitchingProfile.swift in Sources */,
+				01F2E77329FEFFB300AC7B28 /* APIConnectorMock.swift in Sources */,
+				692754402E10F5800071878E /* RHFileBacked.swift in Sources */,
+				69121C692CEC627900B51E4A /* RHVoiceExtensionAudioUnitTests.swift in Sources */,
+				01E9F98B296AD8C000EA4DE7 /* VersionTests.swift in Sources */,
+				0143211A2A00279A009B5FD9 /* RHSpeechUtteranceTests.swift in Sources */,
+				69F5E8A62E75297500C85733 /* IsSynthesizingMessage.swift in Sources */,
+				01E915592AD87AB60051FF87 /* AVSpeechSynthesisProviderRequestTests.swift in Sources */,
+				01763FF62A001D8300BE914F /* XCTestCase.swift in Sources */,
+				69121C6B2CEC628C00B51E4A /* RHVoiceExtensionAudioUnit.swift in Sources */,
+				692754382E10ED770071878E /* SetVoicesMessage.swift in Sources */,
+				69FEA4BF2D21FBA600C34F16 /* PackageInfo.swift in Sources */,
+				01E9F989296AD0E100EA4DE7 /* SerialTasksTests.swift in Sources */,
+				0178F0822A0396A800941356 /* FileManager+Utils.swift in Sources */,
+				69FEA4B82D21FA4700C34F16 /* Version.swift in Sources */,
+				69FEA4C12D21FBB100C34F16 /* Product.swift in Sources */,
+				69121C7D2CEC633700B51E4A /* RHSpeechSynthesisVoiceGender.swift in Sources */,
+				692754272E104F820071878E /* RHVoiceMessageChannel.swift in Sources */,
+				01F12D502A0671A800F63F93 /* RHSpeechSynthesisMarker.swift in Sources */,
+				01BC14752AD9B200003E6E99 /* AVSpeechSynthesisProviderRequest.swift in Sources */,
+				01BC14702AD9AFF0003E6E99 /* String.swift in Sources */,
+				010F3DDD2A03BBD100F36F3A /* RHSpeechSynthesizerTestData.swift in Sources */,
+				01763FF32A00187100BE914F /* ResourseInfo.swift in Sources */,
+				69121C6C2CEC62AA00B51E4A /* FileManager.swift in Sources */,
+				69121C6E2CEC62AA00B51E4A /* SettingsStore.swift in Sources */,
+				69121C712CEC62AA00B51E4A /* SettingsItems.swift in Sources */,
+				694CEDFF2DF50BA7002EDCFC /* Constants.swift in Sources */,
+				69121C732CEC62AA00B51E4A /* LanguageSettings.swift in Sources */,
+				69121C752CEC62AA00B51E4A /* Logger.swift in Sources */,
+				69121C792CEC630C00B51E4A /* RHSpeechSynthesisProviderVoice.swift in Sources */,
+				69FEA4B12D21F9BE00C34F16 /* Language.swift in Sources */,
+				692754222E104C940071878E /* GetVoicesMessage.swift in Sources */,
+				69FEA4BD2D21FAD700C34F16 /* RHVoiceApiBridge.swift in Sources */,
+				01F2E78429FF0C4D00AC7B28 /* AppManagerMock.swift in Sources */,
+				01E9F98D296ADB8900EA4DE7 /* VoiceTests.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01447AFC29F7050A0067985E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0171DAAF28CFA0B3004BC275 /* RHVoiceApp */;
+			targetProxy = 01447AFB29F7050A0067985E /* PBXContainerItemProxy */;
+		};
+		017C717B293776B500F71ABF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 017C717A293776B500F71ABF /* RHVoiceCommonLogic */;
+		};
+		01E9F984296AC51800EA4DE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0171DAAF28CFA0B3004BC275 /* RHVoiceApp */;
+			targetProxy = 01E9F983296AC51800EA4DE7 /* PBXContainerItemProxy */;
+		};
+		01F2E77729FF023F00AC7B28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 01F2E77629FF023F00AC7B28 /* PackDataPlugin */;
+		};
+		691364742E696A3400BDA382 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = 691364732E696A3400BDA382 /* PBXContainerItemProxy */;
+		};
+		691364792E696A3C00BDA382 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = 691364782E696A3C00BDA382 /* PBXContainerItemProxy */;
+		};
+		692754022E0FC24A0071878E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 692754012E0FC24A0071878E /* RHVoice */;
+		};
+		69D7490A2E1F8A9200417A4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 69D749092E1F8A9200417A4D /* ZIPFoundation */;
+		};
+		69F5E8C52E75302100C85733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0171DAD628CFA0B5004BC275 /* RHVoiceExtension */;
+			targetProxy = 69F5E8C42E75302100C85733 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01744A58293E5854005530F7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01744A57293E5854005530F7 /* en */,
+				01744AAE293FA0E8005530F7 /* sq */,
+				01744AAF293FA123005530F7 /* mk */,
+				015D87C129D219BD00DCCAA1 /* pt-BR */,
+				01572D372A7EB0A800B574E7 /* ky */,
+				6921F36B2EA485810001CE23 /* fr */,
+				6921F36D2EA485940001CE23 /* de */,
+				695E75112EA5E01700754584 /* es */,
+				695E75132EA5E04000754584 /* lb */,
+				695E75162EA5E07C00754584 /* ru */,
+				695E75192EA5E0C500754584 /* hy */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01447AFD29F7050B0067985E /* Debug configuration for PBXNativeTarget "RHVoiceUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7RFN6GXPF9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rhvoice.ios.RHVoiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RHVoiceApp;
+			};
+			name = Debug;
+		};
+		01447AFF29F7050B0067985E /* Release configuration for PBXNativeTarget "RHVoiceUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7RFN6GXPF9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rhvoice.ios.RHVoiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RHVoiceApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0171DAF228CFA0B5004BC275 /* Debug configuration for PBXProject "RHVoice" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0171DAF328CFA0B5004BC275 /* Release configuration for PBXProject "RHVoice" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0171DAF528CFA0B5004BC275 /* Debug configuration for PBXNativeTarget "RHVoiceExtension" */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69EC99A62CEEF719006132C7 /* extension_regular_debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RFN6GXPF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RHVoiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RHVoiceExtension;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0171DAF628CFA0B5004BC275 /* Release configuration for PBXNativeTarget "RHVoiceExtension" */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69EC99A72CEEF719006132C7 /* extension_regular_release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Distribution";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7RFN6GXPF9;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 7RFN6GXPF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RHVoiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RHVoiceExtension;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RHVoice Speak Synthesizer iOS Distribution Profile";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "RHVoice Speak Synthesizer macOS Distr Profile MAC";
+				SKIP_INSTALL = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0171DAF928CFA0B5004BC275 /* Debug configuration for PBXNativeTarget "RHVoiceApp" */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69EC99A42CEEF719006132C7 /* app_regular_debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7RFN6GXPF9;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/RHVoice/Resources/RHVoiceApp-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RHVoice;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_MODULE_NAME = RHVoiceApp;
+				PRODUCT_NAME = RHVoice;
+				REGISTER_APP_GROUPS = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		0171DAFA28CFA0B5004BC275 /* Release configuration for PBXNativeTarget "RHVoiceApp" */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69EC99A52CEEF719006132C7 /* app_regular_release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Distribution";
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7RFN6GXPF9;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/RHVoice/Resources/RHVoiceApp-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RHVoice;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_MODULE_NAME = RHVoiceApp;
+				PRODUCT_NAME = RHVoice;
+				REGISTER_APP_GROUPS = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		01E9F985296AC51800EA4DE7 /* Debug configuration for PBXNativeTarget "RHVoiceAppTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RFN6GXPF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nonroutine.RHVoiceAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHVoice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RHVoice";
+			};
+			name = Debug;
+		};
+		01E9F986296AC51800EA4DE7 /* Release configuration for PBXNativeTarget "RHVoiceAppTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RFN6GXPF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nonroutine.RHVoiceAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHVoice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RHVoice";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01447B0129F7050B0067985E /* Build configuration list for PBXNativeTarget "RHVoiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01447AFD29F7050B0067985E /* Debug configuration for PBXNativeTarget "RHVoiceUITests" */,
+				01447AFF29F7050B0067985E /* Release configuration for PBXNativeTarget "RHVoiceUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		0171DAAB28CFA0B3004BC275 /* Build configuration list for PBXProject "RHVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0171DAF228CFA0B5004BC275 /* Debug configuration for PBXProject "RHVoice" */,
+				0171DAF328CFA0B5004BC275 /* Release configuration for PBXProject "RHVoice" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		0171DAF428CFA0B5004BC275 /* Build configuration list for PBXNativeTarget "RHVoiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0171DAF528CFA0B5004BC275 /* Debug configuration for PBXNativeTarget "RHVoiceExtension" */,
+				0171DAF628CFA0B5004BC275 /* Release configuration for PBXNativeTarget "RHVoiceExtension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		0171DAF828CFA0B5004BC275 /* Build configuration list for PBXNativeTarget "RHVoiceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0171DAF928CFA0B5004BC275 /* Debug configuration for PBXNativeTarget "RHVoiceApp" */,
+				0171DAFA28CFA0B5004BC275 /* Release configuration for PBXNativeTarget "RHVoiceApp" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		01E9F987296AC51800EA4DE7 /* Build configuration list for PBXNativeTarget "RHVoiceAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01E9F985296AC51800EA4DE7 /* Debug configuration for PBXNativeTarget "RHVoiceAppTests" */,
+				01E9F986296AC51800EA4DE7 /* Release configuration for PBXNativeTarget "RHVoiceAppTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69D749052E1F8A7000417A4D /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01447B1629F707A70067985E /* RHVoice */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RHVoice;
+		};
+		01447B1829F707C00067985E /* RHVoice */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RHVoice;
+		};
+		017C717A293776B500F71ABF /* RHVoiceCommonLogic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RHVoiceCommonLogic;
+		};
+		018063CB29D079AD00813758 /* RHVoice */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RHVoice;
+		};
+		018063CD29D079B600813758 /* RHVoice */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RHVoice;
+		};
+		01F2E77629FF023F00AC7B28 /* PackDataPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:PackDataPlugin";
+		};
+		692754012E0FC24A0071878E /* RHVoice */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RHVoice;
+		};
+		69D749062E1F8A7000417A4D /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69D749052E1F8A7000417A4D /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		69D749092E1F8A9200417A4D /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69D749052E1F8A7000417A4D /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0171DAA828CFA0B3004BC275 /* Project object */;
+}

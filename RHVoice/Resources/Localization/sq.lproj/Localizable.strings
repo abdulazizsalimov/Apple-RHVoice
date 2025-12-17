@@ -1,0 +1,261 @@
+
+
+"default_voice_title" = "Zëri i parazgjedhur";
+
+
+"default_voice_dialog_title" = "Zgjidhni një zë";
+
+
+"detect_language_title" = "Zbulimi i gjuhës";
+
+
+"detect_language_desc" = "Ndërrimi automatik i gjuhës";
+
+
+"speech_volume" = "Volumi i të folurit";
+
+
+"speech_rate" = "Shkalla e të folurit";
+
+
+"pseudo_english_title" = "Fjalët angleze";
+
+
+"pseudo_english_desc" = "Mundohuni të lexoni saktë fjalët angleze";
+
+
+"settings" = "Përcaktimet";
+
+
+"wifi_only_title" = "Vetëm Wi-Fi";
+
+
+"wifi_only_desc" = "Shkarkoni zëra vetëm në Wi-Fi";
+
+
+"speech_quality" = "Cilësia e të folurit";
+
+
+"languages" = "Gjuhët";
+
+
+"voice_remove_question" = "Je i sigurt që dëshiron ta çinstalosh këtë zë?";
+
+
+"install" = "Instalo";
+
+
+"uninstall" = "Ç’instalo";
+
+
+"play" = "Luaj";
+
+
+"stop" = "Ndalo";
+
+
+"increase" = "Rrit volumin";
+
+
+"decrease" = "Ul volumin";
+
+
+"reset" = "Ripërcakto";
+
+
+"version" = "Version";
+
+
+"user_dicts" = "Fjalorët e përdoruesve";
+
+
+"add" = "Shtoni";
+
+
+"remove" = "Hiqni";
+
+
+"config_file" = "Skedari i konfigurimit";
+
+
+"metered_network_warning" = "Kjo pajisje është aktualisht e lidhur me një rrjet celular. Dëshiron ta shkarkosh zërin më vonë, kur të ofrohet një rrjet Wi-Fi?";
+
+
+"download_now" = "Shkarkoni tani";
+
+
+"download_later" = "Shkarkoni më vonë";
+
+
+"string-array.quality_labels.item_0" = "Performanca më e mirë e mundshme";
+
+
+"string-array.quality_labels.item_1" = "Cilësi standarte";
+
+
+"string-array.quality_labels.item_2" = "Cilësia më e mirë e mundshme";
+
+
+"ios_no_languages" = "Pa gjuhë";
+
+
+"ios_main_screen_voiceover_message" = "Lista e gjuhëve është në krye";
+
+
+"ios_installing_voice" = "Po instalohet zëri: %@";
+
+
+"ios_voice_version" = "Versioni: %@";
+
+
+"ios_uninstall_voice" = "Çinstaloni zërin: %@";
+
+
+"ios_install_voice" = "Instalo zërin: %@";
+
+
+"ios_uninstall_voice_hint" = "Trokit dy herë për të çinstaluar zërin e zgjedhur.";
+
+
+"ios_install_voice_hint" = "Trokit dy herë për të instaluar zërin e zgjedhur.";
+
+
+"ios_license" = "Licencë:";
+
+
+"ios_yes" = "Po";
+
+
+"ios_no" = "Jo";
+
+
+"Back" = "Mbrapa";
+
+
+"ios_no_voices" = "Pa zëra";
+
+
+"ios_language_name_and_version" = "Versioni i gjuhës: %@";
+
+
+"ios_language_screen_voiceover_message" = "Lista e zërave është në krye";
+
+
+"ios_select_quality_voiceover_hint" = "Trokit dy herë për të zgjedhur";
+
+
+"ios_languages_settings" = "Cilësimet e Gjuhëve";
+
+
+"ios_versions" = "Versionet";
+
+
+"ios_application" = "Aplikacioni";
+
+
+"ios_application_version_voiceover_label" = "Versioni i aplikacionit: %@";
+
+
+"ios_engine_version_voiceover_label" = "Versioni i motorit RHVoice: %@";
+
+
+"ios_done" = "U krye";
+
+
+"ios_language_switching" = "Ndërrimi i gjuhës";
+
+
+"ios_unsupported_language_alert_message" = "VoiceOver nuk e mbështet ende plotësisht këtë gjuhë. Duhet ta caktoni ndërrimin e gjuhës së VoiceOver në \'joaktiv\' dhe ta shtoni atë si gjuhë Rotori.";
+
+
+"ios_ok" = "Në rregull";
+
+
+"ios_play_sample" = "Luaj shembullin";
+
+
+"ios_voice_help_button" = "Si ta përdorni këtë zë.";
+
+
+"ios_automatic_updates_on_wifi" = "Përditësime automatike në Wi-Fi";
+
+
+"ios_automatic_updates_on_wifi_description" = "Aktivizimi i këtij cilësimi do të shkaktojë përditësime automatike të paketave të zërit dhe gjuhësore ndërsa jeni i lidhur me Wi-Fi gjatë nisjes së aplikacionit dhe në sfond.";
+
+
+"ios_has_updates" = "Ka përditësime";
+
+
+"ios_update" = "Përditëso";
+
+
+"ios_licenses" = "Licencat";
+
+
+"ios_user_guide" = "Udhëzuesi i përdoruesit";
+
+
+"ios_credit_line1" = "Lidhja e [RHVoice](https://rhvoice.com) dhe VoiceOver, dhe ndërfaqja e përdoruesit e aplikacionit e zhvilluar nga [Ihor Shevchuk](https://github.com/IhorShevchuk)";
+
+
+"ios_credit_line2" = "Të gjitha të drejtat © i përkasin NonRoutine LLC";
+
+
+"ios_app_jailbreak_warning" = "Paralajmërim: Pajisja juaj mund të jetë e kompromentuar, gjë që mund të ndikojë në sjelljen e aplikacionit.";
+
+
+"ios_app_sideloded_warning" = "Kujdes: Mund të jeni mashtruar. Aplikacioni do të ketë funksionalitet të kufizuar. Ju lutemi shkarkojeni aplikacionin nga App Store.";
+
+
+"ios_refresh" = "Rifresko";
+
+
+"ios_userguide_link" = "https://rhvoice.com/apple_support#h1";
+
+
+"ios_go_to_appstore" = "Shko te App Store";
+
+
+"ios_cancel" = "Anulo";
+
+
+"ios_try_a_subscription" = "Provo një abonim";
+
+
+"ios_subscription_description" = "Përpara se të blini një abonim, ju lutemi sigurohuni që zëri është i lidhur dhe funksionon për ju. Do të dëgjoni mesazhe demonstruese, por ato do të hiqen kur të keni një abonim.";
+
+
+"ios_subscription_button" = "Shikoni ofertat e abonimit";
+
+
+"ios_manage_subscription_button" = "Menaxho Abonimin tënd";
+
+
+"ios_language_switching_name" = "Ndërrimi i gjuhës";
+
+
+"ios_subscription_trial_suffix" = "Falas, dhe më pas:.";
+
+
+"ios_subscription_auto_renewable" = "rinovohet automatikisht";
+
+
+"ios_subscription_non_renewable" = "parapaguar";
+
+
+"ios_disconnected" = "I shkëputur";
+
+
+"ios_connected" = "I lidhur";
+
+
+"ios_failed_to_connect" = "Lidhja dështoi";
+
+
+"ios_speech_engine" = "Motori i të folurit";
+
+
+"string-array.ios_quality_labels_short.item.performance" = "Koha më e shkurtër e përgjigjes.";
+
+
+"string-array.ios_quality_labels_short.item.quality" = "Cilësia më e lartë";

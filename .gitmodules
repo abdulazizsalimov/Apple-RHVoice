@@ -1,0 +1,3 @@
+[submodule "Core/Core"]
+	path = Core/Core
+	url = git@github.com:RHVoice/RHVoice.git

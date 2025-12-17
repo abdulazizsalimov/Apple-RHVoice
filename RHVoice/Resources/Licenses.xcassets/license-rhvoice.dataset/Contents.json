@@ -1,0 +1,13 @@
+{
+  "data" : [
+    {
+      "filename" : "license-rhvoice.md",
+      "idiom" : "universal",
+      "universal-type-identifier" : "net.daringfireball.markdown"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

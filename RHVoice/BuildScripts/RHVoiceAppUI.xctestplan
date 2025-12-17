@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "C3B5E147-0F54-4C9E-BF6F-8638D4C94E78",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:RHVoice.xcodeproj",
+        "identifier" : "01447AF429F7050A0067985E",
+        "name" : "RHVoiceUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

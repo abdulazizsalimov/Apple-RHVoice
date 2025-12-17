@@ -1,0 +1,14 @@
+#include "version.xcconfig"
+#include "../config.xcconfig"
+
+APP_BUNDLE_IDENTIFIER=com.nonroutine.RHVoice
+EXTENSION_BUNDLE_IDENTIFIER = ${APP_BUNDLE_IDENTIFIER}.RHVoiceSpeakExtension
+SHARED_DATA_GROUP_ID = group.rhvoice.shared.data
+
+CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*] = RHVoice/Resources/RHVoiceRegular.entitlements
+CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION[sdk=macosx*] = YES
+ENABLE_HARDENED_RUNTIME = YES
+
+FEATURES_FLAGS = ${COMMON_FEATURES_FLAGS} -DREGULAR_APP 
+
+RHVOICE_PRODUCT_NAME=RHVoice

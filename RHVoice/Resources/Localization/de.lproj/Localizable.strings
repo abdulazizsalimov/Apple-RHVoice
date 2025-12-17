@@ -1,0 +1,261 @@
+
+
+"default_voice_title" = "Standardstimme";
+
+
+"default_voice_dialog_title" = "Stimme auswählen";
+
+
+"detect_language_title" = "Spracherkennung";
+
+
+"detect_language_desc" = "Wechseln Sie zu dieser Sprache, wenn sie erkannt wird und Sie normalerweise eine andere Sprache verwenden.";
+
+
+"speech_volume" = "Sprachlautstärke";
+
+
+"speech_rate" = "Sprechgeschwindigkeit";
+
+
+"pseudo_english_title" = "Englische Wörter";
+
+
+"pseudo_english_desc" = "Versuchen Sie, englische Wörter richtig zu lesen";
+
+
+"settings" = "Einstellungen";
+
+
+"wifi_only_title" = "Nur Wi-Fi";
+
+
+"wifi_only_desc" = "Stimmen nur über WLAN herunterladen";
+
+
+"speech_quality" = "Sprachqualität";
+
+
+"languages" = "Sprachen";
+
+
+"voice_remove_question" = "Möchten Sie diese Stimme wirklich deinstallieren?";
+
+
+"install" = "Installieren";
+
+
+"uninstall" = "Deinstallieren";
+
+
+"play" = "Abspielen";
+
+
+"stop" = "Stopp";
+
+
+"increase" = "Erhöhen";
+
+
+"decrease" = "Verringern";
+
+
+"reset" = "Zurücksetzen";
+
+
+"version" = "Version";
+
+
+"user_dicts" = "Benutzerwörterbücher";
+
+
+"add" = "Hinzufügen";
+
+
+"remove" = "Entfernen";
+
+
+"config_file" = "Konfigurationsdatei";
+
+
+"metered_network_warning" = "Dieses Gerät ist derzeit mit einem getakteten Netzwerk verbunden. Möchten Sie die Stimme später herunterladen, wenn ein getaktetes Netzwerk verfügbar ist?";
+
+
+"download_now" = "Jetzt herunterladen";
+
+
+"download_later" = "Später herunterladen";
+
+
+"string-array.quality_labels.item.quality_labels_1" = "Für Telefone mit geringem Stromverbrauch";
+
+
+"string-array.quality_labels.item.quality_labels_2" = "Hohe Reaktionsfähigkeit";
+
+
+"string-array.quality_labels.item.quality_labels_3" = "Beste Qualität";
+
+
+"ios_no_languages" = "Keine Sprachen";
+
+
+"ios_main_screen_voiceover_message" = "Die Liste der Sprachen steht oben";
+
+
+"ios_installing_voice" = "Stimme wird installiert: %@";
+
+
+"ios_voice_version" = "Version: %@";
+
+
+"ios_uninstall_voice" = "Stimme deinstallieren: %@";
+
+
+"ios_install_voice" = "Stimme installieren: %@";
+
+
+"ios_uninstall_voice_hint" = "Doppeltippen, um die ausgewählte Stimme zu deinstallieren.";
+
+
+"ios_install_voice_hint" = "Doppeltippen, um die ausgewählte Stimme zu installieren.";
+
+
+"ios_license" = "Lizenz:";
+
+
+"ios_yes" = "Ja";
+
+
+"ios_no" = "NEIN";
+
+
+"Back" = "Zurück";
+
+
+"ios_no_voices" = "Keine Stimmen";
+
+
+"ios_language_name_and_version" = "Sprachversion: %@";
+
+
+"ios_language_screen_voiceover_message" = "Die Liste der Stimmen steht oben";
+
+
+"ios_select_quality_voiceover_hint" = "Zum Auswählen doppeltippen";
+
+
+"ios_languages_settings" = "Spracheinstellungen";
+
+
+"ios_versions" = "Versionen";
+
+
+"ios_application" = "Anwendung";
+
+
+"ios_application_version_voiceover_label" = "Anwendungsversion: %@";
+
+
+"ios_engine_version_voiceover_label" = "RHVoice-Engine-Version: %@";
+
+
+"ios_done" = "Erledigt";
+
+
+"ios_language_switching" = "Sprachumschaltung";
+
+
+"ios_unsupported_language_alert_message" = "VoiceOver unterstützt diese Sprache noch nicht vollständig. Sie müssen die Sprachumschaltung von VoiceOver deaktivieren und die Sprache als Rotor-Sprache hinzufügen.";
+
+
+"ios_ok" = "OK";
+
+
+"ios_play_sample" = "Beispiel abspielen";
+
+
+"ios_voice_help_button" = "So verwenden Sie diese Stimme.";
+
+
+"ios_automatic_updates_on_wifi" = "Automatische Updates über WLAN";
+
+
+"ios_automatic_updates_on_wifi_description" = "Durch Aktivieren dieser Einstellung werden die Sprach- und Sprachpakete während der WLAN-Verbindung beim Starten der Anwendung und im Hintergrund automatisch aktualisiert.";
+
+
+"ios_has_updates" = "Hat Updates";
+
+
+"ios_update" = "Aktualisieren";
+
+
+"ios_licenses" = "Lizenzen";
+
+
+"ios_user_guide" = "Benutzerhandbuch";
+
+
+"ios_credit_line1" = "Verbindung von [RHVoice](https://rhvoice.com) und VoiceOver sowie Anwendungs-UI entwickelt von [Ihor Shevchuk](https://github.com/IhorShevchuk)";
+
+
+"ios_credit_line2" = "Alle © Rechte liegen bei NonRoutine LLC";
+
+
+"ios_app_jailbreak_warning" = "Warnung: Ihr Gerät könnte kompromittiert sein, was sich auf das Verhalten der App auswirken könnte.";
+
+
+"ios_app_sideloded_warning" = "Warnung: Sie wurden möglicherweise getäuscht. Die App verfügt über eingeschränkte Funktionalität. Laden Sie die App bitte aus dem App Store herunter.";
+
+
+"ios_refresh" = "Aktualisieren";
+
+
+"ios_userguide_link" = "https://rhvoice.com/apple_support#h1";
+
+
+"ios_go_to_appstore" = "Zum App Store";
+
+
+"ios_cancel" = "Stornieren";
+
+
+"ios_try_a_subscription" = "Testen Sie ein Abonnement";
+
+
+"ios_subscription_description" = "Bevor Sie ein Abonnement erwerben, stellen Sie bitte sicher, dass die Sprachfunktion aktiviert ist und funktioniert. Sie hören Demo-Nachrichten, diese werden jedoch bei Abschluss eines Abonnements entfernt.";
+
+
+"ios_subscription_button" = "Abonnementangebote anzeigen";
+
+
+"ios_manage_subscription_button" = "Verwalten Sie Ihr Abonnement";
+
+
+"ios_language_switching_name" = "Sprachumschaltung";
+
+
+"ios_subscription_trial_suffix" = "Kostenlos, und danach:.";
+
+
+"ios_subscription_auto_renewable" = "automatische Verlängerungen";
+
+
+"ios_subscription_non_renewable" = "Prepaid";
+
+
+"ios_disconnected" = "Getrennt";
+
+
+"ios_connected" = "Verbunden";
+
+
+"ios_failed_to_connect" = "Verbindung fehlgeschlagen";
+
+
+"ios_speech_engine" = "Sprachmodul";
+
+
+"string-array.ios_quality_labels_short.item.performance" = "Kürzeste Reaktionszeit.";
+
+
+"string-array.ios_quality_labels_short.item.quality" = "Höchste Qualität";

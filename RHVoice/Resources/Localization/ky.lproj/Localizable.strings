@@ -1,0 +1,261 @@
+
+
+"default_voice_title" = "Баштапкы үн";
+
+
+"default_voice_dialog_title" = "Үн тандоо";
+
+
+"detect_language_title" = "Тилди аныктоо";
+
+
+"detect_language_desc" = "Тилди автоматтык түрдө алмаштыруу";
+
+
+"speech_volume" = "Үндүн катуулугу";
+
+
+"speech_rate" = "Үндүн ылдамдыгы";
+
+
+"pseudo_english_title" = "Англис сөздөр";
+
+
+"pseudo_english_desc" = "Англис сөздөрүн туура окууга аракеттенүү";
+
+
+"settings" = "Түзөтүүлөр";
+
+
+"wifi_only_title" = "Wi-Fi боюнча гана";
+
+
+"wifi_only_desc" = "Wi-Fi боюнча гана үндү жүктөө";
+
+
+"speech_quality" = "Сүйлөө сапаты";
+
+
+"languages" = "Тилдер";
+
+
+"voice_remove_question" = "Бул үндү өчүрүү керекпи?";
+
+
+"install" = "Орнотуу";
+
+
+"uninstall" = "Өчүрүү";
+
+
+"play" = "Ойнотуу";
+
+
+"stop" = "Токтотуу";
+
+
+"increase" = "Чоңойтуу";
+
+
+"decrease" = "Азайтуу";
+
+
+"reset" = "Баштапкы калыбына келтирүү";
+
+
+"version" = "Версия";
+
+
+"user_dicts" = "Колдонуучу сөздүктөр";
+
+
+"add" = "кошуу";
+
+
+"remove" = "Алып салуу";
+
+
+"config_file" = "Конфигурациялык файл";
+
+
+"metered_network_warning" = "Бул аппарат учурда мобилдик тармакка туташкан. Wi-Fi тармагы жеткиликтүү болгондо, үндү кийинчерээк жүктөп алгыңыз келеби?";
+
+
+"download_now" = "Азыр жүктөп алыңыз";
+
+
+"download_later" = "Кийинчерээк жүктөп алыңыз";
+
+
+"string-array.quality_labels.item_0" = "Ылдамдыктын жакшыртылган мүмкүнчүлүгү";
+
+
+"string-array.quality_labels.item_1" = "Стандарттык сапат";
+
+
+"string-array.quality_labels.item_2" = "Мүмкүн болгон эң жакшы сапат";
+
+
+"ios_no_languages" = "Тилдер жок";
+
+
+"ios_main_screen_voiceover_message" = "Тилдердин тизмеси жогоруда";
+
+
+"ios_installing_voice" = "Үн орнотулууда: %@";
+
+
+"ios_voice_version" = "Версия: %@";
+
+
+"ios_uninstall_voice" = "Үндү өчүрүү: %@";
+
+
+"ios_install_voice" = "Үн орнотуу: %@";
+
+
+"ios_uninstall_voice_hint" = "Тандалган үндү өчүрүү үчүн эки жолу басыңыз.";
+
+
+"ios_install_voice_hint" = "Тандалган үндү орнотуу үчүн эки жолу басыңыз.";
+
+
+"ios_license" = "Лицензия: ";
+
+
+"ios_yes" = "Ооба";
+
+
+"ios_no" = "Жок";
+
+
+"Back" = "Артка";
+
+
+"ios_no_voices" = "Үн жок";
+
+
+"ios_language_name_and_version" = "Тил версиясы: %@";
+
+
+"ios_language_screen_voiceover_message" = "Үндөрдүн тизмеси жогоруда";
+
+
+"ios_select_quality_voiceover_hint" = "Тандоо үчүн эки жолу басыңыз";
+
+
+"ios_languages_settings" = "Тилдер орнотуулары";
+
+
+"ios_versions" = "Версиялар";
+
+
+"ios_application" = "Колдонмо";
+
+
+"ios_application_version_voiceover_label" = "Колдонмонун версиясы: %@";
+
+
+"ios_engine_version_voiceover_label" = "RHVoice кыймылдаткычынын версиясы: %@";
+
+
+"ios_done" = "Бүттү";
+
+
+"ios_language_switching" = "Тилди алмаштыруу";
+
+
+"ios_unsupported_language_alert_message" = "VoiceOver азырынча бул тилди толук колдобойт. VoiceOver тилин которууну \"өчүрүү\" деп коюп, аны Ротор тили катары кошушуңуз керек.";
+
+
+"ios_ok" = "Макул";
+
+
+"ios_play_sample" = "Үлгү ойноо";
+
+
+"ios_voice_help_button" = "Бул үндү кантип колдонуу керек.";
+
+
+"ios_automatic_updates_on_wifi" = "Wi-Fi боюнча автоматтык жаңыртуулар";
+
+
+"ios_automatic_updates_on_wifi_description" = "Бул жөндөөнү иштетүү тиркемени ишке киргизүү учурунда жана фондо Wi-Fi тармагына туташып турганда Үн жана Тил топтомдорунун автоматтык жаңыртууларына себеп болот.";
+
+
+"ios_has_updates" = "Жаңыртуулар бар";
+
+
+"ios_update" = "Жаңыртуу";
+
+
+"ios_licenses" = "Лицензиялар";
+
+
+"ios_user_guide" = "Колдонуучунун колдонмосу";
+
+
+"ios_credit_line1" = "[RHVoice](https://rhvoice.com) жана VoiceOver туташуусу жана [Ихор Шевчук] тарабынан иштелип чыккан Колдонмо UI(https://github.com/IhorShevchuk)";
+
+
+"ios_credit_line2" = "Бардык Â© укуктары NonRoutine ЖЧКга таандык";
+
+
+"ios_app_jailbreak_warning" = "Эскертүү: Түзмөгүңүз бузулушу мүмкүн, бул колдонмонун иштөөсүнө таасир этиши мүмкүн.";
+
+
+"ios_app_sideloded_warning" = "Эскертүү: Сиз алданган болушуңуз мүмкүн. Колдонмо чектелген функцияга ээ болот. Сураныч, колдонмону App Store дүкөнүнөн жүктөп алыңыз.";
+
+
+"ios_refresh" = "Жаңылоо";
+
+
+"ios_userguide_link" = "https://rhvoice.com/apple_support#h1";
+
+
+"ios_go_to_appstore" = "Колдонмо дүкөнүнө өтүңүз";
+
+
+"ios_cancel" = "Жокко чыгаруу";
+
+
+"ios_try_a_subscription" = "Жазылууну байкап көрүңүз";
+
+
+"ios_subscription_description" = "Жазылууну сатып алардан мурун, үн туташып, сиз үчүн иштеп жатканын текшериңиз. Сиз демонстрация билдирүүлөрүн угасыз, бирок алар жазылуу болгондо өчүрүлөт.";
+
+
+"ios_subscription_button" = "Жазылуу сунуштарын көрүү";
+
+
+"ios_manage_subscription_button" = "Жазылууңузду башкарыңыз";
+
+
+"ios_language_switching_name" = "Тилди алмаштыруу";
+
+
+"ios_subscription_trial_suffix" = "Акысыз, андан кийин:.";
+
+
+"ios_subscription_auto_renewable" = "авто-жаңыртуу";
+
+
+"ios_subscription_non_renewable" = "алдын ала төлөнгөн";
+
+
+"ios_disconnected" = "Ажыратылды";
+
+
+"ios_connected" = "Туташкан";
+
+
+"ios_failed_to_connect" = "Туташуу ишке ашкан жок";
+
+
+"ios_speech_engine" = "Кеп кыймылдаткычы";
+
+
+"string-array.ios_quality_labels_short.item.performance" = "Эң кыска жооп берүү убактысы.";
+
+
+"string-array.ios_quality_labels_short.item.quality" = "Эң жогорку сапат";
