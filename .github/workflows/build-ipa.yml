@@ -1,0 +1,106 @@
+name: Build RHVoice IPA
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_number:
+        description: 'Build number'
+        required: true
+        default: '1'
+      platform:
+        description: 'Target platform'
+        required: true
+        default: 'iOS'
+        type: choice
+        options:
+          - iOS
+          - macOS
+          - Both
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Select Xcode version
+        run: sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Install SwiftLint
+        run: brew install swiftlint
+
+      - name: Build and archive (iOS)
+        if: inputs.platform == 'iOS' || inputs.platform == 'Both'
+        env:
+          BUILD_NUMBER: ${{ inputs.build_number }}
+        run: |
+          xcodebuild clean archive \
+            -project RHVoice.xcodeproj \
+            -configuration "Release" \
+            -scheme RHVoiceApp \
+            -archivePath "BuildOutput/RHVoiceAppiOS.xcarchive" \
+            -destination "generic/platform=iOS" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGN_ENTITLEMENTS=""
+
+      - name: Create unsigned IPA (iOS)
+        if: inputs.platform == 'iOS' || inputs.platform == 'Both'
+        run: |
+          mkdir -p BuildOutput/Payload
+          cp -r BuildOutput/RHVoiceAppiOS.xcarchive/Products/Applications/*.app BuildOutput/Payload/
+          cd BuildOutput
+          zip -r RHVoice-iOS-unsigned.ipa Payload
+          rm -rf Payload
+
+      - name: Build and archive (macOS)
+        if: inputs.platform == 'macOS' || inputs.platform == 'Both'
+        env:
+          BUILD_NUMBER: ${{ inputs.build_number }}
+        run: |
+          xcodebuild clean archive \
+            -project RHVoice.xcodeproj \
+            -configuration "Release" \
+            -scheme RHVoiceApp \
+            -archivePath "BuildOutput/RHVoiceAppmacOS.xcarchive" \
+            -destination "generic/platform=macOS" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGN_ENTITLEMENTS=""
+
+      - name: Package macOS app
+        if: inputs.platform == 'macOS' || inputs.platform == 'Both'
+        run: |
+          cd BuildOutput
+          zip -r -y RHVoice-macOS.zip RHVoiceAppmacOS.xcarchive/Products/Applications/*.app
+
+      - name: Upload iOS IPA
+        if: inputs.platform == 'iOS' || inputs.platform == 'Both'
+        uses: actions/upload-artifact@v4
+        with:
+          name: RHVoice-iOS-unsigned-ipa
+          path: BuildOutput/RHVoice-iOS-unsigned.ipa
+
+      - name: Upload iOS xcarchive
+        if: inputs.platform == 'iOS' || inputs.platform == 'Both'
+        uses: actions/upload-artifact@v4
+        with:
+          name: RHVoice-iOS-xcarchive
+          path: BuildOutput/RHVoiceAppiOS.xcarchive
+
+      - name: Upload macOS app
+        if: inputs.platform == 'macOS' || inputs.platform == 'Both'
+        uses: actions/upload-artifact@v4
+        with:
+          name: RHVoice-macOS-app
+          path: BuildOutput/RHVoice-macOS.zip
