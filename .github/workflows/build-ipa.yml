@@ -35,7 +35,11 @@ jobs:
         run: xcodebuild -version
 
       - name: Patch package URL to use packages-1.16.json
-        run: sed -i '' 's|packages-1.18.json|packages-1.16.json|' Core/Core/src/pkg/package_client.cpp
+        run: |
+          sed -i '' 's|https://s2.nonroutine.com/apple.json|https://rhvoice.org/download/packages-1.16.json|' Core/Package.swift
+          sed -i '' 's|packages-1.18.json|packages-1.16.json|' Core/Core/src/pkg/package_client.cpp
+          echo "Verifying Package.swift patch:"
+          grep PKG_DIR_URL Core/Package.swift
 
       - name: Install SwiftLint
         run: brew install swiftlint
