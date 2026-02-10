@@ -16,6 +16,14 @@ on:
           - iOS
           - macOS
           - Both
+      bundle_languages:
+        description: 'Languages to bundle (comma-separated folder names from Core/Core/data/languages/)'
+        required: false
+        default: 'Russian,English'
+      bundle_voices:
+        description: 'Voices to bundle (comma-separated folder names from Core/Core/data/voices/)'
+        required: false
+        default: 'anna,aleksandr'
 
 jobs:
   build:
@@ -59,6 +67,51 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGN_ENTITLEMENTS=""
+
+      - name: Bundle voice data into extension (iOS)
+        if: inputs.platform == 'iOS' || inputs.platform == 'Both'
+        run: |
+          APP_PATH=$(ls -d BuildOutput/RHVoiceAppiOS.xcarchive/Products/Applications/*.app)
+          APPEX_PATH=$(ls -d "$APP_PATH"/PlugIns/*.appex)
+          echo "App path: $APP_PATH"
+          echo "Extension path: $APPEX_PATH"
+
+          VOICE_DATA_DIR="$APPEX_PATH/RHVoiceData"
+          mkdir -p "$VOICE_DATA_DIR/languages"
+          mkdir -p "$VOICE_DATA_DIR/voices"
+
+          IFS=',' read -ra LANGS <<< "${{ inputs.bundle_languages }}"
+          for lang in "${LANGS[@]}"; do
+            lang=$(echo "$lang" | xargs)
+            SRC="Core/Core/data/languages/$lang"
+            if [ -d "$SRC" ]; then
+              echo "Bundling language: $lang"
+              cp -r "$SRC" "$VOICE_DATA_DIR/languages/"
+            else
+              echo "WARNING: Language folder not found: $SRC"
+            fi
+          done
+
+          IFS=',' read -ra VOICES <<< "${{ inputs.bundle_voices }}"
+          for voice in "${VOICES[@]}"; do
+            voice=$(echo "$voice" | xargs)
+            SRC="Core/Core/data/voices/$voice"
+            if [ -d "$SRC" ]; then
+              echo "Bundling voice: $voice"
+              cp -r "$SRC" "$VOICE_DATA_DIR/voices/"
+            else
+              echo "WARNING: Voice folder not found: $SRC"
+            fi
+          done
+
+          echo "Bundled voice data contents:"
+          ls -R "$VOICE_DATA_DIR" | head -40
+          echo "Total size:"
+          du -sh "$VOICE_DATA_DIR"
+
+          MAIN_VOICE_DATA_DIR="$APP_PATH/RHVoiceData"
+          cp -r "$VOICE_DATA_DIR" "$MAIN_VOICE_DATA_DIR"
+          echo "Also copied voice data to main app bundle."
 
       - name: Create unsigned IPA (iOS)
         if: inputs.platform == 'iOS' || inputs.platform == 'Both'
