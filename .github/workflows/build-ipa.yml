@@ -34,6 +34,9 @@ jobs:
       - name: Show Xcode version
         run: xcodebuild -version
 
+      - name: Patch package URL to use packages-1.16.json
+        run: sed -i '' 's|packages-1.18.json|packages-1.16.json|' Core/Core/src/pkg/package_client.cpp
+
       - name: Install SwiftLint
         run: brew install swiftlint
 
