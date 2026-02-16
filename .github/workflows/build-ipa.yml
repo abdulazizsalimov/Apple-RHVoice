@@ -49,6 +49,16 @@ jobs:
           echo "Verifying Package.swift patch:"
           grep PKG_DIR_URL Core/Package.swift
 
+      - name: Copy custom voices into Core data
+        run: |
+          if [ -d "custom-voices" ]; then
+            for voice_dir in custom-voices/*/; do
+              voice_name=$(basename "$voice_dir")
+              echo "Copying custom voice: $voice_name"
+              cp -r "$voice_dir" "Core/Core/data/voices/$voice_name"
+            done
+          fi
+
       - name: Install SwiftLint
         run: brew install swiftlint
 
