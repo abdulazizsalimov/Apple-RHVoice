@@ -67,12 +67,67 @@ class RHVoiceManager: NSObject, ObservableObject {
 #endif
     }
     
+    private static let disabledVoicesKey = "BundledDisabledVoices"
+
+    var disabledVoiceIDs: Set<String> {
+        get {
+            if let ids = UserDefaults.standard.array(forKey: RHVoiceManager.disabledVoicesKey) as? [String] {
+                return Set(ids)
+            }
+            return Set()
+        }
+        set {
+            UserDefaults.standard.set(Array(newValue), forKey: RHVoiceManager.disabledVoicesKey)
+        }
+    }
+
+    func isVoiceEnabled(_ voiceId: String) -> Bool {
+        return !disabledVoiceIDs.contains(voiceId.lowercased())
+    }
+
+    func setVoiceEnabled(_ voiceId: String, enabled: Bool) {
+        var ids = disabledVoiceIDs
+        if enabled {
+            ids.remove(voiceId.lowercased())
+        } else {
+            ids.insert(voiceId.lowercased())
+        }
+        disabledVoiceIDs = ids
+        Task {
+            await updateSharedVoicesStoreForBundled()
+        }
+    }
+
+    func updateSharedVoicesStoreForBundled() async {
+        let disabled = disabledVoiceIDs
+        let allVoices = RHSpeechSynthesisVoice.speechVoices()
+        let enabledVoices = allVoices.filter { !disabled.contains($0.identifier.lowercased()) }
+        let avVoices = enabledVoices.rhAVVoices
+        SettingsStore.shared.supportedVoices = avVoices
+        SettingsStore.shared.supportedVoicesExtension = avVoices
+        AppManager.shared.audioUnit.installedVoices = avVoices
+        notifySystemAboutVoiceNumberChange()
+        Log.info("Updated bundled voices store. Enabled count: \(avVoices.count)")
+    }
+
+    func playBundledSample(voiceName: String, demo: String) {
+        stopPlaying()
+        setAudioSession(active: true)
+        let allVoices = RHSpeechSynthesisVoice.speechVoices()
+        guard let rhVoice = allVoices.first(where: { $0.name.lowercased() == voiceName.lowercased() }) else {
+            Log.error("Can not find bundled voice: \(voiceName)")
+            return
+        }
+        let avVoice = rhVoice.avVoice
+        playInstalledSample(voice: avVoice, demo: demo)
+    }
+
     @discardableResult func getLanguagesAndUpdate() async -> [Language] {
         guard let languages = await apiConnector?.languages() else {
             return []
         }
         
-        if SettingsStore.shared.automaticUpdates {
+        if !AppManager.isBundledMode && SettingsStore.shared.automaticUpdates {
             if let info = await AppManager.shared.reachability.getInfo() {
                 if info.canBeUsedForUpdates {
                     Log.debug("Updating languages and voices because automaticUpdates is enabled and network connection is suitable for downloading.")
@@ -331,6 +386,10 @@ extension RHVoiceManager {
     }
 
     func updateSharedVoicesStore() async {
+        if AppManager.isBundledMode {
+            await updateSharedVoicesStoreForBundled()
+            return
+        }
         guard let languages = await apiConnector?.languages() else {
             return
         }
