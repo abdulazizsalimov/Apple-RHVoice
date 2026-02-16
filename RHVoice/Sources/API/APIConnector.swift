@@ -123,14 +123,14 @@ actor BundledAPIConnector: APIConnectorInterface {
     ]
 
     func languages() async -> [Language] {
-        let engineLanguages = RHVoiceBridge.sharedInstance().languages() as? [RHLanguage] ?? []
+        let engineLanguages: [RHLanguage] = RHVoiceBridge.sharedInstance().languages()
         return engineLanguages.compactMap { rhLang -> Language? in
-            let langCode = rhLang.code ?? ""
+            let langCode = rhLang.code
             guard !langCode.isEmpty else { return nil }
 
-            let rhVoices = rhLang.voices as? [RHSpeechSynthesisVoice] ?? []
+            let rhVoices: [RHSpeechSynthesisVoice] = rhLang.voices
             let voices: [Voice] = rhVoices.map { rhVoice in
-                let langCodeFull = rhVoice.languageCode ?? ""
+                let langCodeFull = rhVoice.languageCode
                 let ctry2code: String
                 if langCodeFull.contains("-") {
                     ctry2code = String(langCodeFull.split(separator: "-").last ?? "")
@@ -165,7 +165,7 @@ actor BundledAPIConnector: APIConnectorInterface {
             return Language(
                 code: langCode,
                 testMessage: testMessage,
-                name: rhLang.country ?? langCode,
+                name: rhLang.country,
                 version: langVersion,
                 voices: voices,
                 dataUrl: "",
