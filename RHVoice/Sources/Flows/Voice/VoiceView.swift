@@ -63,6 +63,13 @@ struct VoiceView: View {
     }
     
     private var accessibilityLabelString: String {
+        if AppManager.isBundledMode {
+            let stateString = hostModel.viewModel.isEnabled
+                ? String.localized("ios_voice_enabled", comment: "Voice toggle state: enabled.")
+                : String.localized("ios_voice_disabled", comment: "Voice toggle state: disabled.")
+            return "\(voice.name), \(stateString)"
+        }
+
         if hostModel.viewModel.showActivityIndicator == true {
             return String.localized("ios_installing_voice",
                                     comment: "Accessibility label message pronounced to the user while voice is being installed.",
@@ -87,6 +94,12 @@ struct VoiceView: View {
     }
     
     private var accessibilityHintString: String {
+        if AppManager.isBundledMode {
+            return hostModel.viewModel.isEnabled
+                ? String.localized("ios_voice_disable_hint", comment: "Hint for disabling voice toggle.")
+                : String.localized("ios_voice_enable_hint", comment: "Hint for enabling voice toggle.")
+        }
+
         if installedVoice != nil {
             return String.localized("ios_uninstall_voice_hint",
                                     comment: "Accessibility hint message pronounced to the user for uninstall voice action.",
@@ -172,7 +185,20 @@ struct VoiceView: View {
         Button {
             hostModel.toggleVoice()
         } label: {
-            buttonImageView(systemName: hostModel.viewModel.isEnabled ? "checkmark.circle.fill" : "circle")
+            let buttonSize = 50.0
+            if hostModel.viewModel.isEnabled {
+                Image(systemName: "checkmark.circle.fill")
+                    .resizable()
+                    .imageScale(.large)
+                    .frame(width: buttonSize, height: buttonSize)
+                    .foregroundColor(.accentColor)
+            } else {
+                Image(systemName: "circle")
+                    .resizable()
+                    .imageScale(.large)
+                    .frame(width: buttonSize, height: buttonSize)
+                    .foregroundColor(.gray)
+            }
         }
         .buttonStyle(PlainButtonStyle())
     }
@@ -282,6 +308,8 @@ struct VoiceView: View {
                             .accessibilityAddTraits(.isButton)
                     } else {
                         playDemo()
+                            .disabled(AppManager.isBundledMode && !hostModel.viewModel.isEnabled)
+                            .opacity(AppManager.isBundledMode && !hostModel.viewModel.isEnabled ? 0.3 : 1.0)
                             .accessibilityElement()
                             .accessibilityLabel(String.localized("ios_play_sample"))
                             .accessibilityAddTraits(.isButton)

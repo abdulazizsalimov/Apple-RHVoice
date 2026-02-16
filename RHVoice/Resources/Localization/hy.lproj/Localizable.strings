@@ -174,6 +174,18 @@
 "ios_play_sample" = "Նվագարկել նմուշը";
 
 
+"ios_voice_enabled" = "Միացված";
+
+
+"ios_voice_disabled" = "Անջատված";
+
+
+"ios_voice_enable_hint" = "Կրկնակի հպեք՝ միացնելու համար։";
+
+
+"ios_voice_disable_hint" = "Կրկնակի հպեք՝ անջատելու համար։";
+
+
 "ios_voice_help_button" = "Ինչպես օգտագործել այս ձայնը։";
 
 
