@@ -174,6 +174,18 @@
 "ios_play_sample" = "Luaj shembullin";
 
 
+"ios_voice_enabled" = "Aktivizuar";
+
+
+"ios_voice_disabled" = "Çaktivizuar";
+
+
+"ios_voice_enable_hint" = "Trokit dy herë për të aktivizuar.";
+
+
+"ios_voice_disable_hint" = "Trokit dy herë për të çaktivizuar.";
+
+
 "ios_voice_help_button" = "Si ta përdorni këtë zë.";
 
 

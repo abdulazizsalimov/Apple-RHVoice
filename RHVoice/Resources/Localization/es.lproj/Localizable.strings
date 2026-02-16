@@ -165,6 +165,18 @@
 "ios_play_sample" = "Reproducir muestra";
 
 
+"ios_voice_enabled" = "Activada";
+
+
+"ios_voice_disabled" = "Desactivada";
+
+
+"ios_voice_enable_hint" = "Toque dos veces para activar.";
+
+
+"ios_voice_disable_hint" = "Toque dos veces para desactivar.";
+
+
 "ios_voice_help_button" = "Cómo utilizar esta voz.";
 
 

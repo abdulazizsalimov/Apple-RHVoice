@@ -174,6 +174,18 @@
 "ios_play_sample" = "Play Sample";
 
 
+"ios_voice_enabled" = "Enabled";
+
+
+"ios_voice_disabled" = "Disabled";
+
+
+"ios_voice_enable_hint" = "Double tap to enable.";
+
+
+"ios_voice_disable_hint" = "Double tap to disable.";
+
+
 "ios_voice_help_button" = "How to use this voice.";
 
 
