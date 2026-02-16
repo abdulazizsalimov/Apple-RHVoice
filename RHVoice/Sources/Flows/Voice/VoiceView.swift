@@ -168,9 +168,21 @@ struct VoiceView: View {
     }
     
     @ViewBuilder
+    private func toggleVoiceView() -> some View {
+        Button {
+            hostModel.toggleVoice()
+        } label: {
+            buttonImageView(systemName: hostModel.viewModel.isEnabled ? "checkmark.circle.fill" : "circle")
+        }
+        .buttonStyle(PlainButtonStyle())
+    }
+
+    @ViewBuilder
     private func playDemo() -> some View {
         Button {
-            if let installedVoice {
+            if AppManager.isBundledMode {
+                hostModel.playBundledSample()
+            } else if let installedVoice {
                 hostModel.playInstalledSample(voice: installedVoice)
             } else {
                 hostModel.playNotInstalledSample(voice: voice)
@@ -193,7 +205,9 @@ struct VoiceView: View {
     
     @ViewBuilder
     private func download() -> some View {
-        if hostModel.viewModel.showActivityIndicator == true {
+        if AppManager.isBundledMode {
+            toggleVoiceView()
+        } else if hostModel.viewModel.showActivityIndicator == true {
             progressView()
         } else {
             let voiceInstalled = installedVoice != nil

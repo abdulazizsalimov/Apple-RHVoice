@@ -37,6 +37,9 @@ class VoiceHostModel: BaseHostModel, @unchecked Sendable {
     init(voice: Voice, language: Language) {
         self.viewModel = VoiceViewModel(voice: voice, language: language)
         super.init()
+        if AppManager.isBundledMode {
+            viewModel.isEnabled = AppManager.shared.voiceManager.isVoiceEnabled(voice.id)
+        }
         stopPlayingCancellable =  AppManager.shared.voiceManager.$isPlaying.sink { [weak self] isPlaying in
             guard let self = self else {
                 return
@@ -88,6 +91,19 @@ class VoiceHostModel: BaseHostModel, @unchecked Sendable {
         publishUpdate()
     }
     
+    func toggleVoice() {
+        let newState = !viewModel.isEnabled
+        viewModel.isEnabled = newState
+        AppManager.shared.voiceManager.setVoiceEnabled(viewModel.voice.id, enabled: newState)
+        publishUpdate()
+    }
+
+    func playBundledSample() {
+        AppManager.shared.voiceManager.playBundledSample(voiceName: viewModel.voice.name, demo: viewModel.language.testMessage)
+        viewModel.isPlaying = true
+        publishUpdate()
+    }
+
     func playNotInstalledSample(voice: Voice) {
         AppManager.shared.voiceManager.playNotInstalledSample(voice: voice)
         viewModel.isPlaying = true

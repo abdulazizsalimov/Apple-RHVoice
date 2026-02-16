@@ -35,6 +35,7 @@ class VoiceViewModel {
     var shouldShowUnsupportedLanguageMessage = false
     var showActivityIndicator = false
     var isPlaying = false
+    var isEnabled = true
 
     var languageAndRegionUnsupportedMessage: String {
         guard let unsupportedLanguageRegion = voice.localizedRegionName else {

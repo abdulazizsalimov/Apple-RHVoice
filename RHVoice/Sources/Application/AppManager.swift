@@ -36,11 +36,27 @@ class AppManager {
     let backgroundTasks = BackgroundTasksManager()
     let audioUnit: RHVoiceAudioUnit
 
-    init(apiConnector: APIConnectorInterface = APIConnector(),
+    static var isBundledMode: Bool {
+        return Bundle.main.path(forResource: Constants.RHVoiceDataFolderName, ofType: nil) != nil
+    }
+
+    init(apiConnector: APIConnectorInterface? = nil,
          dataPath: URL? = FileManager.default.rhvoiceDataPathURL,
          packagePath: URL? = FileManager.default.rhvoicePackagePathURL) {
-        self.apiConnector = apiConnector
-        self.voiceManager = RHVoiceManager(dataPath: dataPath, pkgPath: packagePath, apiConnector: self.apiConnector)
+        let resolvedDataPath: URL?
+        let resolvedConnector: APIConnectorInterface
+
+        if AppManager.isBundledMode,
+           let bundlePath = Bundle.main.path(forResource: Constants.RHVoiceDataFolderName, ofType: nil) {
+            resolvedDataPath = URL(fileURLWithPath: bundlePath)
+            resolvedConnector = apiConnector ?? BundledAPIConnector()
+        } else {
+            resolvedDataPath = dataPath
+            resolvedConnector = apiConnector ?? APIConnector()
+        }
+
+        self.apiConnector = resolvedConnector
+        self.voiceManager = RHVoiceManager(dataPath: resolvedDataPath, pkgPath: packagePath, apiConnector: self.apiConnector)
         self.audioUnit = RHVoiceAudioUnit(taskSerializer: taskSerializer)
     }
 }
