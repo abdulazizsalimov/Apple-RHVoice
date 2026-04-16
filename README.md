@@ -64,6 +64,25 @@ SHARED_DATA_GROUP_ID = group.example.rhvoice.shared.data
 ./RHVoice/BuildScripts/BuildApp.sh $BUILD_MINOR_NUMBER
 ```
 
+## Custom Bundled Languages and Voices
+
+The `Build RHVoice IPA` GitHub Actions workflow accepts comma-separated folder names:
+
+- `bundle_languages`: folders from `Core/Core/data/languages/`
+- `bundle_voices`: folders from `Core/Core/data/voices/`
+
+This repository also supports local overrides copied into `Core/Core/data` before the build:
+
+- custom voices from `custom-voices/`
+- custom languages from `custom-languages/`
+
+Custom Tajik language data and the `firdavs` voice are included, so they can be bundled by name in the workflow inputs:
+
+```text
+bundle_languages: Russian,English,Tajik
+bundle_voices: anna,aleksandr,firdavs
+```
+
 ## Notes
 
 - SwiftLint must be installed and available in your PATH.

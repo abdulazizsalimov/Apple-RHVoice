@@ -59,6 +59,16 @@ jobs:
             done
           fi
 
+      - name: Copy custom languages into Core data
+        run: |
+          if [ -d "custom-languages" ]; then
+            for lang_dir in custom-languages/*/; do
+              lang_name=$(basename "$lang_dir")
+              echo "Copying custom language: $lang_name"
+              cp -r "$lang_dir" "Core/Core/data/languages/$lang_name"
+            done
+          fi
+
       - name: Install SwiftLint
         run: brew install swiftlint
 
